@@ -1,4 +1,4 @@
-import { type ViewNavigatorState, MOVE_LEFT, MOVE_RIGHT } from '../types/ViewNavigator'
+import { type ViewNavigatorState, MOVE_LEFT, MOVE_RIGHT } from './types/ViewNavigator'
 
 class ViewNavigatorTransitionManager {
   setInitialColumnWidth (state: ViewNavigatorState, width: number): ViewNavigatorState {

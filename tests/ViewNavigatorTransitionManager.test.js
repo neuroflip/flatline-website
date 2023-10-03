@@ -1,8 +1,7 @@
 /**
  * @jest-environment jsdom
  */
-import { ViewNavigatorState } from '../src/types/ViewNavigator'
-import ViewNavigatorTransitionManager from '../src/components/ViewNavigatorTransitionManager'
+import ViewNavigatorTransitionManager from '../src/ViewNavigatorTransitionManager'
 
 let container = null
 const state = {

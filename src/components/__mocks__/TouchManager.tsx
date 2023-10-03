@@ -1,5 +1,5 @@
 import * as React from 'react'
-import type { TouchManagerProps } from '../types/TouchManager'
+import type { TouchManagerProps } from '../../types/TouchManager'
 
 const TouchManager = ({ onStartTouch, onMoveTouch, onPageChange, onResetColumns, children }: TouchManagerProps): React.ReactElement => {
   React.useEffect(() => {

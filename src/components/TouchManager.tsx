@@ -1,5 +1,5 @@
 import * as React from 'react'
-import type { TouchManagerProps, TouchManagerState } from './types/TouchManager'
+import type { TouchManagerProps, TouchManagerState } from '../types/TouchManager'
 
 const body = window.document.body
 const MIN_SENSI = 100

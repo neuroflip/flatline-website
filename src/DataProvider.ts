@@ -5,15 +5,13 @@ import Column4Data from './data/Column4.html'
 import Column5Data from './data/Column5.html'
 import Column6Data from './data/Column6.html'
 
-interface DataProvider {
-  data: TrustedHTML[]
-}
-
 const mod = (x: number, y: number): number => {
   return ((x % y) + y) % y
 }
 
 class DataProvider {
+  data: any[]
+
   constructor () {
     this.data = [Column1Data,
       Column2Data,
