@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test 1`] = `
+[
+  <div
+    className="viewNavigatorContainer"
+  >
+    <div
+      className="col1 "
+      id="col1"
+      style={
+        {
+          "transform": "translate(-0px,0) perspective(400px) rotateY(-45deg) scale(0.5)",
+        }
+      }
+    >
+      <div
+        className="columnContainer"
+        dangerouslySetInnerHTML={
+          {
+            "__html": "<div>column5 0</div>",
+          }
+        }
+      />
+    </div>
+    <div
+      className="col2 current"
+      id="col2"
+      style={
+        {
+          "transform": "translate(0px, 0px)",
+        }
+      }
+    >
+      <div
+        className="columnContainer"
+        dangerouslySetInnerHTML={
+          {
+            "__html": "<div>column1 0</div>",
+          }
+        }
+      />
+    </div>
+    <div
+      className="col3 "
+      id="col3"
+      style={
+        {
+          "transform": "translate(0px,0) perspective(400px) rotateY(-45deg) scale(0.5)",
+        }
+      }
+    >
+      <div
+        className="columnContainer"
+        dangerouslySetInnerHTML={
+          {
+            "__html": "<div>column2 0</div>",
+          }
+        }
+      />
+    </div>
+  </div>,
+  <div
+    className="left arrowHandler"
+    id="leftArrowHandler"
+    onClick={[Function]}
+  >
+    &lt;
+  </div>,
+  <div
+    className="right arrowHandler"
+    id="rigthArrowHandler"
+    onClick={[Function]}
+  >
+    &gt;
+  </div>,
+]
+`;
