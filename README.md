@@ -9,5 +9,6 @@ under the hood:
 - webpack
 - jest tests
 - sass
+- touch and mouse enabled
 
 neuroflip
