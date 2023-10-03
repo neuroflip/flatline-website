@@ -1,10 +1,8 @@
-import type { ViewNavigatorState } from '../../types/ViewNavigator'
+import type { ViewNavigatorState } from '../types/ViewNavigator'
 
 const ViewNavigatorTransitionManager = jest.fn().mockImplementation(() => {
   return {
-    constructor: jest.fn().mockImplementation(()=>{
-      console.log('init! constructor en mock de transitioner')
-    }),
+    constructor: jest.fn().mockImplementation(() => { }),
     setInitialColumnWidth: jest.fn().mockImplementation((state: ViewNavigatorState, width: number): ViewNavigatorState => {
       const newState: ViewNavigatorState = {
         index: 0,

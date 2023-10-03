@@ -6,19 +6,20 @@ import * as React from 'react'
 import { render, screen, fireEvent } from '@testing-library/react'
 import renderer from 'react-test-renderer'
 import ViewNavigator from '../src/components/ViewNavigator'
-import DataProvider from '../src/DataProvider'
-import TouchManager from '../src/TouchManager'
-import ViewNavigatorTransitionManager from '../src/components/ViewNavigatorTransitionManager'
+import ColumnDataProvider from '../src/ColumnDataProvider'
+import TouchManager from '../src/components/TouchManager'
+import ViewNavigatorTransitionManager from '../src/ViewNavigatorTransitionManager'
 import '@testing-library/jest-dom'
 
 let container = null
 
-jest.mock('../src/TouchManager')
-jest.mock('../src/DataProvider')
-jest.mock('../src/components/ViewNavigatorTransitionManager')
+jest.mock('../src/ColumnDataProvider')
+jest.mock('../src/components/TouchManager')
+jest.mock('../src/ViewNavigatorTransitionManager')
 
 beforeEach(() => {
-  DataProvider.mockClear()
+  ColumnDataProvider.mockClear()
+  ViewNavigatorTransitionManager.mockClear()
 
   container = window.document.createElement('div')
   container.id = 'root'
@@ -71,4 +72,3 @@ it('snapshot test', () => {
 
   expect(tree).toMatchSnapshot()
 })
-

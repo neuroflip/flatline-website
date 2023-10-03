@@ -3,7 +3,7 @@
  */
 
 import * as React from 'react'
-import TouchManager from '../src/TouchManager'
+import TouchManager from '../src/components/TouchManager'
 import { render, fireEvent, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 

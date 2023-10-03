@@ -1,10 +1,10 @@
 import * as React from 'react'
-import TouchManager from '../TouchManager'
-import DataProvider from '../DataProvider'
+import TouchManager from './TouchManager'
 import Column from './Column'
 import ArrowHandler from './ArrowHandler'
 import { type ViewNavigatorState, MOVE_LEFT } from '../types/ViewNavigator'
-import ViewNavigatorTransitionManager from './ViewNavigatorTransitionManager'
+import ViewNavigatorTransitionManager from '../ViewNavigatorTransitionManager'
+import ColumnDataProvider from '../ColumnDataProvider'
 
 import '../../css/ViewNavigator.scss'
 
@@ -12,7 +12,7 @@ function ViewNavigator (): React.JSX.Element {
   let col1: TrustedHTML = ''
   let col2: TrustedHTML = ''
   let col3: TrustedHTML = ''
-  const dataManager = new DataProvider()
+  const dataProvider = new ColumnDataProvider()
   const transitionManager = new ViewNavigatorTransitionManager()
   const columnWidth = React.useRef(0)
   const [state, setState] = React.useState<ViewNavigatorState>({
@@ -72,19 +72,11 @@ function ViewNavigator (): React.JSX.Element {
     onPageChange(-400)
   }
 
-  if (state.col1Classes.includes('current')) {
-    col1 = dataManager.getCurrent(state.index)
-    col2 = dataManager.getNext(state.index)
-    col3 = dataManager.getPrevious(state.index)
-  } else if (state.col2Classes.includes('current')) {
-    col1 = dataManager.getPrevious(state.index)
-    col2 = dataManager.getCurrent(state.index)
-    col3 = dataManager.getNext(state.index)
-  } else if (state.col3Classes.includes('current')) {
-    col1 = dataManager.getNext(state.index)
-    col2 = dataManager.getPrevious(state.index)
-    col3 = dataManager.getCurrent(state.index)
-  }
+  [col1, col2, col3] = dataProvider.getData({
+    col1Classes: state.col1Classes,
+    col2Classes: state.col2Classes,
+    index: state.index
+  })
 
   return <TouchManager onPageChange={onPageChange}
     onStartTouch={() => {}}
