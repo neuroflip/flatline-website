@@ -2,7 +2,7 @@
     position: fixed;
     height: calc(100% - 85px);
     width: 90%;
-    // max-width: 375px;
+    
     overflow-y: scroll;
     margin: 10px auto;
     padding: 0 5px;
@@ -10,6 +10,9 @@
     z-index: -10;
 
     a {
+        max-width: 450px;
+        margin: 0 auto;
+        display: block;
         text-decoration: none;
         -webkit-user-drag: none;
     }
