@@ -27,9 +27,9 @@ afterEach(() => {
 it('ViewNavigatorTransitionManager sets initial styles', () => {
   const newState = transitionManager.setInitialColumnWidth(state, 100)
 
-  expect(newState.col1Style).toStrictEqual({ transform: 'translate(-100px,0) perspective(400px) rotateY(-45deg) scale(0.5)' })
+  expect(newState.col1Style).toStrictEqual({ transform: 'translate(-100px,0) scale(0.5)' })
   expect(newState.col2Style).toStrictEqual({ transform: 'translate(0px, 0px)' })
-  expect(newState.col3Style).toStrictEqual({ transform: 'translate(100px,0) perspective(400px) rotateY(-45deg) scale(0.5)' })
+  expect(newState.col3Style).toStrictEqual({ transform: 'translate(100px,0) scale(0.5)' })
 })
 
 it('ViewNavigatorTransitionManager removes animation classes', () => {
@@ -59,7 +59,7 @@ it('ViewNavigatorTransitionManager sets correct styles while moving RIGHT', () =
 it('ViewNavigatorTransitionManager changes correctly page', () => {
   const newState = transitionManager.onPageChange(state, -300, 375)
 
-  expect(newState.col1Style).toStrictEqual({ transform: 'translate(-375px,0) perspective(400px) rotateY(-45deg) scale(0.5)' })
+  expect(newState.col1Style).toStrictEqual({ transform: 'translate(-375px,0) scale(0.5)' })
   expect(newState.col2Style).toStrictEqual({ transform: 'translate(0px,0)' })
-  expect(newState.col3Style).toStrictEqual({ transform: 'translate(375px,0) perspective(400px) rotateY(-45deg) scale(0.5)' })
+  expect(newState.col3Style).toStrictEqual({ transform: 'translate(375px,0) scale(0.5)' })
 })
