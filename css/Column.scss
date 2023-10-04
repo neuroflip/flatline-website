@@ -43,7 +43,7 @@
         top: -27px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        font-family: 'Lucida Sans', sans-serif;
+        font-family: 'Victor Mono';
         background-color: cadetblue;
         text-align: center;
         line-height: 21px;
@@ -56,12 +56,17 @@
         margin: 0px auto;
         color: rgba(0,0,0,1.0);
         background-color: rgba(255,255,255,1.0);
-        font-family: 'Lucida Sans', sans-serif;
+        font-family: 'Victor Mono';
     }
     
     .coverTitle {
         font-size: 2em;
-        margin-top: 20px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .coverText {
+        margin: 40px 10px;
     }
     
     .columnContainer {
