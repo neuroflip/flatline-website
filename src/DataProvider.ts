@@ -4,6 +4,7 @@ import Column3Data from './data/Column3.html'
 import Column4Data from './data/Column4.html'
 import Column5Data from './data/Column5.html'
 import Column6Data from './data/Column6.html'
+import Column7Data from './data/Column7.html'
 
 const mod = (x: number, y: number): number => {
   return ((x % y) + y) % y
@@ -18,7 +19,8 @@ class DataProvider {
       Column3Data,
       Column4Data,
       Column5Data,
-      Column6Data]
+      Column6Data,
+      Column7Data]
   }
 
   getCurrent (index: number): TrustedHTML {
