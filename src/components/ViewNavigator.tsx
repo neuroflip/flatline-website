@@ -32,10 +32,6 @@ function ViewNavigator (): React.JSX.Element {
 
     columnWidth.current = container !== null ? container.clientWidth : 0
     setState(transitionManager.setInitialColumnWidth(state, columnWidth.current))
-
-    return () => {
-      // destroy del touchmanager
-    }
   }, [])
 
   function onPageChange (finalProgressX: number): void {
