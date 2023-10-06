@@ -19,6 +19,10 @@ function TouchManager ({
 
   React.useEffect(() => {
     addEvents()
+
+    return () => {
+      removeEvents()
+    }
   }, [])
 
   function addEvents (): void {
@@ -34,10 +38,6 @@ function TouchManager ({
     body.removeEventListener(isMobile() ? 'touchend' : 'mouseup', onTouchEnd)
 
     window.removeEventListener('resize', onResetColumns())
-  }
-
-  function destroy (): void {
-    removeEvents()
   }
 
   function onTouchStart (nativeEvent: TouchEvent | MouseEvent): void {

@@ -14,6 +14,7 @@ const onResetColumns = jest.fn().mockName('onResetColumns')
 
 let container
 let oldAddEventListener
+let unmount
 
 beforeEach(() => {
   container = window.document.createElement('div')
@@ -65,13 +66,13 @@ it('TouchManager attaches to events', () => {
 
 describe('TouchManager test the callbacks', () => {
   beforeEach(() => {
-    render(<TouchManager onPageChange={onTouchEnd}
+    ({ unmount } = render(<TouchManager onPageChange={onTouchEnd}
       onStartTouch={onTouchStart}
       onMoveTouch={onTouchMove}
       onResetColumns={onResetColumns}>
         <div>Children content to test</div>
       </TouchManager>
-    , container)
+    , container))
   })
 
   it('TouchManager calls the callbacks: onTouchStart', () => {
@@ -127,6 +128,32 @@ describe('TouchManager test the callbacks', () => {
 
   it('TouchManager dont calls to move callback when there is no previous mouseDown event', () => {
     fireEvent.mouseMove(container, {
+      target: container,
+      clientX: -300,
+      clientY: 100
+    })
+
+    expect(onTouchStart).not.toHaveBeenCalled()
+    expect(onTouchMove).not.toHaveBeenCalled()
+    expect(onTouchEnd).not.toHaveBeenCalled()
+  })
+
+  it('TouchManager remove event handlers when unmounting', () => {
+    unmount()
+
+    fireEvent.mouseDown(container, {
+      target: container,
+      clientX: 10,
+      clientY: 100
+    })
+
+    fireEvent.mouseMove(container, {
+      target: container,
+      clientX: -300,
+      clientY: 100
+    })
+
+    fireEvent.mouseUp(container, {
       target: container,
       clientX: -300,
       clientY: 100
