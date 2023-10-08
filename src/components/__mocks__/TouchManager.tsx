@@ -1,7 +1,7 @@
 import * as React from 'react'
 import type { TouchManagerProps } from '../../types/TouchManager'
 
-const TouchManager = ({ onStartTouch, onMoveTouch, onPageChange, onResetColumns, children }: TouchManagerProps): React.ReactElement => {
+const TouchManager = jest.fn().mockImplementation(({ onStartTouch, onMoveTouch, onPageChange, onResetColumns, children }: TouchManagerProps): React.ReactElement => {
   React.useEffect(() => {
     addEvents()
   }, [])
@@ -21,5 +21,6 @@ const TouchManager = ({ onStartTouch, onMoveTouch, onPageChange, onResetColumns,
   }
 
   return children
-}
+})
+
 export default TouchManager

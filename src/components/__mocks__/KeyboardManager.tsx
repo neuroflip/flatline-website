@@ -2,7 +2,7 @@ import * as React from 'react'
 import type { KeyboardManagerProps } from '../../types/KeyboardManager'
 import Utils from '../../Utils'
 
-const KeyboardManager = ({ onPageChange, children }: KeyboardManagerProps): React.ReactElement => {
+const KeyboardManager = jest.fn().mockImplementation(({ onPageChange, children }: KeyboardManagerProps): React.ReactElement => {
   React.useEffect(() => {
     addEvents()
   }, [])
@@ -19,5 +19,6 @@ const KeyboardManager = ({ onPageChange, children }: KeyboardManagerProps): Reac
   }
 
   return children
-}
+})
+
 export default KeyboardManager
