@@ -1,5 +1,5 @@
 import * as React from 'react'
-import TouchManager from './TouchManager'
+import InputManager from './InputManager'
 import Column from './Column'
 import ArrowHandler from './ArrowHandler'
 import { type ViewNavigatorState, MOVE_LEFT } from '../types/ViewNavigator'
@@ -74,23 +74,25 @@ function ViewNavigator (): React.JSX.Element {
     index: state.index
   })
 
-  return <TouchManager onPageChange={onPageChange}
+  return <InputManager onPageChange={onPageChange}
     onStartTouch={() => {}}
-    onMoveTouch={onMovePage}
+    onMovePage={onMovePage}
     onResetColumns={onResetColumns}>
-    <div className='viewNavigatorContainer'>
-        <Column id='col1' className={`col1 ${state.col1Classes}`} style={state.col1Style}>
-          <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col1 }} />
-        </Column>
-        <Column id='col2' className={`col2 ${state.col2Classes}`} style={state.col2Style}>
-          <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col2 }} />
-        </Column>
-        <Column id='col3' className={`col3 ${state.col3Classes}`} style={state.col3Style}>
-          <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col3 }} />
-        </Column>
-    </div>
-    <ArrowHandler onRightClick={onArrowRightClick} onLeftClick={onArrowLeftClick}></ArrowHandler>
-  </TouchManager>
+      <>
+        <div className='viewNavigatorContainer'>
+            <Column id='col1' className={`col1 ${state.col1Classes}`} style={state.col1Style}>
+              <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col1 }} />
+            </Column>
+            <Column id='col2' className={`col2 ${state.col2Classes}`} style={state.col2Style}>
+              <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col2 }} />
+            </Column>
+            <Column id='col3' className={`col3 ${state.col3Classes}`} style={state.col3Style}>
+              <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col3 }} />
+            </Column>
+        </div>
+        <ArrowHandler onRightClick={onArrowRightClick} onLeftClick={onArrowLeftClick}></ArrowHandler>
+      </>
+  </InputManager>
 }
 
 export default ViewNavigator
