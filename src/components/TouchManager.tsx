@@ -38,16 +38,16 @@ function TouchManager ({
   }
 
   function onTouchStart (nativeEvent: TouchEvent | MouseEvent): void {
-    if (nativeEvent instanceof TouchEvent) {
+    if (nativeEvent instanceof MouseEvent) {
+      stateRef.current.startX = nativeEvent.clientX
+      stateRef.current.startY = nativeEvent.clientY
+    } else if (nativeEvent instanceof TouchEvent) {
       const touches = nativeEvent.touches
 
       if (Boolean(touches) && touches.length === 1) {
         stateRef.current.startX = touches[0].clientX
         stateRef.current.startY = touches[0].clientY
       }
-    } else if (nativeEvent instanceof MouseEvent) {
-      stateRef.current.startX = nativeEvent.clientX
-      stateRef.current.startY = nativeEvent.clientY
     }
     stateRef.current.isRealEvent = true
     onStartTouch()
@@ -58,14 +58,13 @@ function TouchManager ({
     let progressY = 0
 
     if (stateRef.current.isRealEvent) {
-      if (nativeEvent instanceof TouchEvent) {
-        progressX = nativeEvent.touches[0].clientX
-        progressY = nativeEvent.touches[0].clientY
-      } else if (nativeEvent instanceof MouseEvent) {
+      if (nativeEvent instanceof MouseEvent) {
         progressX = nativeEvent.clientX
         progressY = nativeEvent.clientY
+      } else if (nativeEvent instanceof TouchEvent) {
+        progressX = nativeEvent.touches[0].clientX
+        progressY = nativeEvent.touches[0].clientY
       }
-
       progressX = Math.round(progressX) - stateRef.current.startX
       progressY = Math.round(progressY) - stateRef.current.startY
 
@@ -79,12 +78,12 @@ function TouchManager ({
     let finalProgressX = 0
     let finalProgressY = 0
 
-    if (nativeEvent instanceof TouchEvent) {
-      finalProgressX = nativeEvent.changedTouches[0].clientX
-      finalProgressY = nativeEvent.changedTouches[0].clientY
-    } else if (nativeEvent instanceof MouseEvent) {
+    if (nativeEvent instanceof MouseEvent) {
       finalProgressX = nativeEvent.clientX
       finalProgressY = nativeEvent.clientY
+    } else if (nativeEvent instanceof TouchEvent) {
+      finalProgressX = nativeEvent.changedTouches[0].clientX
+      finalProgressY = nativeEvent.changedTouches[0].clientY
     }
 
     finalProgressX = (finalProgressX) - stateRef.current.startX
