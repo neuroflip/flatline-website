@@ -6,7 +6,8 @@
   module.exports = { 
     isMobile,
     KEY_LEFT: 'ArrowLeft',
-    KEY_RIGHT: 'ArrowRight'
+    KEY_RIGHT: 'ArrowRight',
+    WIDTH_TO_MOVE: 400
   }
   
   

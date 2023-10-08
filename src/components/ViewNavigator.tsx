@@ -5,6 +5,7 @@ import ArrowHandler from './ArrowHandler'
 import { type ViewNavigatorState, MOVE_LEFT } from '../types/ViewNavigator'
 import ViewNavigatorTransitionManager from '../ViewNavigatorTransitionManager'
 import ColumnDataProvider from '../ColumnDataProvider'
+import Utils from '../Utils'
 
 import '../../css/ViewNavigator.scss'
 
@@ -61,11 +62,11 @@ function ViewNavigator (): React.JSX.Element {
   }
 
   function onArrowLeftClick (): void {
-    onPageChange(400)
+    onPageChange(Utils.WIDTH_TO_MOVE)
   }
 
   function onArrowRightClick (): void {
-    onPageChange(-400)
+    onPageChange(-Utils.WIDTH_TO_MOVE)
   }
 
   [col1, col2, col3] = dataProvider.getData({

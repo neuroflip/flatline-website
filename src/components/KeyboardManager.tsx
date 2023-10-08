@@ -1,7 +1,6 @@
 import * as React from 'react'
 import type { KeyboardManagerProps } from '../types/KeyboardManager'
-
-const WIDTH_TO_MOVE = 400
+import Utils from '../Utils'
 
 function KeyboardManager ({
   children,
@@ -12,9 +11,9 @@ function KeyboardManager ({
   function addEvents (): void {
     document.onkeydown = (e) => {
       if (e.key === nextKeyCode) {
-        onPageChange(-WIDTH_TO_MOVE)
+        onPageChange(-Utils.WIDTH_TO_MOVE)
       } else if (e.key === previousKeyCode) {
-        onPageChange(WIDTH_TO_MOVE)
+        onPageChange(Utils.WIDTH_TO_MOVE)
       }
     }
   }
