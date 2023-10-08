@@ -61,6 +61,7 @@ module.exports = {
         { from: 'static/logo3.png', to: 'logo3.png' },
         { from: 'static/logo4.png', to: 'logo4.png' },
         { from: 'static/logo5.png', to: 'logo5.png' },
+        { from: 'static/logo6.png', to: 'logo6.png' },
         { from: 'static/logo7.png', to: 'logo7.png' }
       ],
     }),

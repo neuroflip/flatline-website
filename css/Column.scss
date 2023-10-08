@@ -1,6 +1,6 @@
 #col1, #col2, #col3 {
     position: fixed;
-    height: calc(100% - 85px);
+    height: calc(100% - 70px);
     width: 90%;
     
     overflow-y: scroll;
@@ -30,7 +30,6 @@
         padding: 0 30px 20px 20px;
         border-radius: 0 0 15px 15px;
         font-family: 'Victor Mono';
-        box-shadow: 5px 5px rgba(80, 80, 80, 0.7);
     }
     
     .textContainer:before {
@@ -67,10 +66,13 @@
     .coverText {
         margin: 40px 10px;
     }
-    
+
     .columnContainer {
         width: 95%;
+        max-width: 450px;
         margin: 20px auto;
+        box-shadow: 5px 5px rgba(80, 80, 80, 0.7);
+        border-radius: 14px;
     }
 }
 
