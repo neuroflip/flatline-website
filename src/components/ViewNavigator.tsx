@@ -53,10 +53,6 @@ function ViewNavigator (): React.JSX.Element {
     setState((state: ViewNavigatorState) => {
       const newState = transitionManager.onResetColumns({ ...state }, columnWidth.current)
 
-      setTimeout(() => {
-        transitionManager.removeAnimation(newState)
-      }, 300)
-
       return newState
     })
   }

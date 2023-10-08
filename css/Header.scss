@@ -8,5 +8,13 @@ header {
     svg {
         margin: 12px;
         cursor: pointer;
+        height: 50px;
+    }
+
+    .headerText {
+        float: right;
+        margin: 12px;
+        font-family: 'Victor Mono';
+        font-size: 0.8em;
     }
 }
