@@ -1,12 +1,9 @@
 import * as React from 'react'
+import Utils from '../Utils'
 import type { TouchManagerProps } from '../types/TouchManager'
 
 const body = window.document.body
 const MIN_SENSI = 100
-
-function isMobile (): boolean {
-  return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(window.navigator.userAgent))
-}
 
 function TouchManager ({
   onPageChange,
@@ -26,16 +23,16 @@ function TouchManager ({
   }, [])
 
   function addEvents (): void {
-    body.addEventListener(isMobile() ? 'touchstart' : 'mousedown', onTouchStart)
-    body.addEventListener(isMobile() ? 'touchmove' : 'mousemove', onTouchMove)
-    body.addEventListener(isMobile() ? 'touchend' : 'mouseup', onTouchEnd)
+    body.addEventListener(Utils.isMobile() ? 'touchstart' : 'mousedown', onTouchStart)
+    body.addEventListener(Utils.isMobile() ? 'touchmove' : 'mousemove', onTouchMove)
+    body.addEventListener(Utils.isMobile() ? 'touchend' : 'mouseup', onTouchEnd)
     window.addEventListener('resize', onResetColumns())
   }
 
   function removeEvents (): void {
-    body.removeEventListener(isMobile() ? 'touchstart' : 'mousedown', onTouchStart)
-    body.removeEventListener(isMobile() ? 'touchmove' : 'mousemove', onTouchMove)
-    body.removeEventListener(isMobile() ? 'touchend' : 'mouseup', onTouchEnd)
+    body.removeEventListener(Utils.isMobile() ? 'touchstart' : 'mousedown', onTouchStart)
+    body.removeEventListener(Utils.isMobile() ? 'touchmove' : 'mousemove', onTouchMove)
+    body.removeEventListener(Utils.isMobile() ? 'touchend' : 'mouseup', onTouchEnd)
 
     window.removeEventListener('resize', onResetColumns())
   }
