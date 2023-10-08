@@ -1,11 +1,14 @@
 <style>
-    .animatedengine:before {
+    .animatedengine .textContainer:before {
         content: "animated 3d engine";
     }
+    .animatedengine .image {
+        background-image: url('http://flatline.hopto.org/logo2.png');
+    }
 </style>
-<a href="http://flatline.hopto.org/3dEngine/">
-    <img src="http://flatline.hopto.org/logo2.png">
-    <div class="textContainer animatedengine">
+<a class="animatedengine" href="http://flatline.hopto.org/3dEngine/">
+    <div class="image"></div>
+    <div class="textContainer">
         <div class="coverTitle">Animation in Obsolete Engine</div>
         <div class="coverText"><p>Animated objects implemented in Obsolete Engine.</p></div>
     </div>

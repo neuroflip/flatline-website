@@ -12,7 +12,7 @@ function Header (): React.JSX.Element {
             </g>
         </svg>
 
-        <div className='headerText'>Swipe Right ir Left using touch, mouse or keuboard</div>
+
     </header>)
 }
 

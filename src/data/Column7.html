@@ -1,10 +1,13 @@
 <style>
-    .ahxmidiplayer:before {
+    .ahxmidiplayer .textContainer:before {
         content: "ahxmidiplayer";
     }
+    .ahxmidiplayer .image {
+        background-image: url('http://flatline.hopto.org/logo7.png');
+    }
 </style>
-<a href="http://ahxmidiplayer.hopto.org/">
-    <img src="http://flatline.hopto.org/logo7.png">
+<a class="ahxmidiplayer" href="http://ahxmidiplayer.hopto.org/">
+    <div class="image"></div>
     <div class="textContainer ahxmidiplayer">
     <div class="coverTitle">AMP - AHXMidiPlayer</div>
     <div class="coverText"><p>AMP is a try to get some MIDI features using the AHX engine sounds at Commodore Amiga Range of computers. You can assign midi channels to ahx instruments, bang notes using NOTE ON midi messages or edit ahx instrument parameters like the ADSR curve using CC midi commands.</p>
