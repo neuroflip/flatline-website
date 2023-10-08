@@ -10,9 +10,9 @@ const KeyboardManager = jest.fn().mockImplementation(({ onPageChange, children }
   function addEvents (): void {
     document.onkeydown = jest.fn().mockImplementation((e) => {
       if (e.key === Utils.KEY_RIGHT) {
-        onPageChange(-400)
+        onPageChange(-Utils.WIDTH_TO_MOVE)
         if (e.key === Utils.KEY_LEFT) {
-          onPageChange(400)
+          onPageChange(Utils.WIDTH_TO_MOVE)
         }
       }
     })
