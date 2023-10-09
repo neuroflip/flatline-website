@@ -84,21 +84,21 @@ class ViewNavigatorTransitionManager {
         state.col1Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
         state.col2Style = { transform: 'translate(0px,0)' }
         state.col3Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
-        state.col1Classes = state.col1Classes.replace('current','')
+        state.col1Classes = state.col1Classes.replace('current', '')
         state.col2Classes += 'current'
         state.col3Classes = state.col3Classes.replace('animated', '')
       } else if (state.col2Classes.includes('current')) {
         state.col1Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
         state.col2Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
         state.col3Style = { transform: 'translate(0px,0)' }
-        state.col2Classes = state.col2Classes.replace('current','')
+        state.col2Classes = state.col2Classes.replace('current', '')
         state.col3Classes += 'current'
         state.col1Classes = state.col1Classes.replace('animated', '')
       } else if (state.col3Classes.includes('current')) {
         state.col1Style = { transform: 'translate(0px,0)' }
         state.col2Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
         state.col3Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
-        state.col3Classes = state.col3Classes.replace('current','')
+        state.col3Classes = state.col3Classes.replace('current', '')
         state.col1Classes += 'current'
         state.col2Classes = state.col2Classes.replace('animated', '')
       }
@@ -110,21 +110,21 @@ class ViewNavigatorTransitionManager {
         state.col1Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
         state.col2Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
         state.col3Style = { transform: 'translate(0px,0)' }
-        state.col1Classes = state.col1Classes.replace('current','')
+        state.col1Classes = state.col1Classes.replace('current', '')
         state.col3Classes += 'current'
         state.col2Classes = state.col2Classes.replace('animated', '')
       } else if (state.col2Classes.includes('current')) {
         state.col1Style = { transform: 'translate(0px,0)' }
         state.col2Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
         state.col3Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
-        state.col2Classes = state.col2Classes.replace('current','')
+        state.col2Classes = state.col2Classes.replace('current', '')
         state.col1Classes += 'current'
         state.col3Classes = state.col3Classes.replace('animated', '')
       } else if (state.col3Classes.includes('current')) {
         state.col1Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
         state.col2Style = { transform: 'translate(0px,0)' }
         state.col3Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
-        state.col3Classes = state.col3Classes.replace('current','')
+        state.col3Classes = state.col3Classes.replace('current', '')
         state.col2Classes += 'current'
         state.col1Classes = state.col1Classes.replace('animated', '')
       }
@@ -136,7 +136,7 @@ class ViewNavigatorTransitionManager {
   }
 }
 
-function addAnimationIfNeeded(state: ViewNavigatorState) {
+function addAnimationIfNeeded (state: ViewNavigatorState): void {
   state.col1Classes = state.col1Classes.includes('animated') ? `${state.col1Classes}` : `animated ${state.col1Classes}`
   state.col2Classes = state.col2Classes.includes('animated') ? `${state.col2Classes}` : `animated ${state.col2Classes}`
   state.col3Classes = state.col3Classes.includes('animated') ? `${state.col3Classes}` : `animated ${state.col3Classes}`

@@ -163,4 +163,28 @@ describe('TouchManager test the callbacks', () => {
     expect(onTouchMove).not.toHaveBeenCalled()
     expect(onTouchEnd).not.toHaveBeenCalled()
   })
+
+  it('TouchManager does not call start callback moving mouse vertically', () => {
+    fireEvent.mouseDown(container, {
+      target: container,
+      clientX: 10,
+      clientY: 100
+    })
+
+    fireEvent.mouseMove(container, {
+      target: container,
+      clientX: 10,
+      clientY: 300
+    })
+
+    fireEvent.mouseUp(container, {
+      target: container,
+      clientX: 10,
+      clientY: 300
+    })
+
+    expect(onTouchStart).toHaveBeenCalled()
+    expect(onTouchMove).not.toHaveBeenCalled()
+    expect(onTouchEnd).not.toHaveBeenCalled()
+  })
 })
