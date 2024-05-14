@@ -1,5 +1,5 @@
 import * as React from 'react'
-import '../../css/Header.scss'
+import '../css/Header.scss'
 
 function Header (): React.JSX.Element {
   return (<header>
