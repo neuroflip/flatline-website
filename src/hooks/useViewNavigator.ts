@@ -29,7 +29,7 @@ function useViewNavigator (): any[] {
   React.useEffect(() => {
     const container = document.querySelector('.viewNavigatorContainer')
 
-    columnWidth.current = container !== null ? container.clientWidth - container.clientWidth * 0.25 : 0
+    columnWidth.current = container !== null ? container.clientWidth - container.clientWidth * 0.15 : 0
     setState(transitionManager.setInitialColumnWidth(state, columnWidth.current))
   }, [])
 
