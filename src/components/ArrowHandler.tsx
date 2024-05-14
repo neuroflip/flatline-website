@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import '../../css/ArrowHandler.scss'
+import '../css/ArrowHandler.scss'
 
 interface ArrowHandlerProps {
     onLeftClick: React.MouseEventHandler<HTMLDivElement>,
