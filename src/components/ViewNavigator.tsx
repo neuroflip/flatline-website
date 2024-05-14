@@ -13,6 +13,7 @@ function ViewNavigator (): React.JSX.Element {
   let col1: TrustedHTML = ''
   let col2: TrustedHTML = ''
   let col3: TrustedHTML = ''
+
   const dataProvider = new ColumnDataProvider()
   const transitionManager = new ViewNavigatorTransitionManager()
   const columnWidth = React.useRef(0)
@@ -25,7 +26,9 @@ function ViewNavigator (): React.JSX.Element {
     col1Style: { transform: `translate(-${columnWidth.current}px,0) perspective(400px) rotateY(-45deg) scale(0.5)` },
     col2Style: { transform: 'translate(0px, 0px)' },
     col3Style: { transform: `translate(${columnWidth.current}px,0) perspective(400px) rotateY(-45deg) scale(0.5)` },
-    columns: []
+    columns: [React.useRef<HTMLDivElement>(null),
+      React.useRef<HTMLDivElement>(null),
+      React.useRef<HTMLDivElement>(null)]
   })
 
   React.useEffect(() => {
@@ -37,12 +40,9 @@ function ViewNavigator (): React.JSX.Element {
 
   function onPageChange (finalProgressX: number): void {
     setState((state: ViewNavigatorState) => {
-      const newState = transitionManager.onPageChange({ ...state }, finalProgressX, columnWidth.current)
+      let newState = transitionManager.onPageChange({ ...state }, finalProgressX, columnWidth.current)
 
-      setTimeout(() => {
-        setState(transitionManager.removeAnimation(newState))
-      }, 300)
-
+      newState = addTransitionEndToRemoveAnimation(newState)
       return newState
     })
   }
@@ -55,12 +55,9 @@ function ViewNavigator (): React.JSX.Element {
 
   function onResetColumns (): void {
     setState((state: ViewNavigatorState) => {
-      const newState = transitionManager.onResetColumns({ ...state }, columnWidth.current)
+      let newState = transitionManager.onResetColumns({ ...state }, columnWidth.current)
 
-      setTimeout(() => {
-        setState(transitionManager.removeAnimation(newState))
-      }, 300)
-
+      newState = addTransitionEndToRemoveAnimation(newState)
       return newState
     })
   }
@@ -71,6 +68,29 @@ function ViewNavigator (): React.JSX.Element {
 
   function onArrowRightClick (): void {
     onPageChange(-Utils.WIDTH_TO_MOVE)
+  }
+
+  function addTransitionEndToRemoveAnimation (state: ViewNavigatorState): ViewNavigatorState {
+    const removeAnimation = (): void => {
+      setState(transitionManager.removeAnimation(state))
+    }
+
+    state.columns[0]?.current?.addEventListener('transitionend', removeAnimation, { once: true })
+    state.columns[0]?.current?.addEventListener('transitioncancel', () => {
+      state.columns[0]?.current?.removeEventListener('transitionend', removeAnimation)
+    }, { once: true })
+
+    state.columns[1]?.current?.addEventListener('transitionend', removeAnimation, { once: true })
+    state.columns[1]?.current?.addEventListener('transitioncancel', () => {
+      state.columns[1]?.current?.removeEventListener('transitionend', removeAnimation)
+    }, { once: true })
+
+    state.columns[2]?.current?.addEventListener('transitionend', removeAnimation, { once: true })
+    state.columns[2]?.current?.addEventListener('transitioncancel', () => {
+      state.columns[2]?.current?.removeEventListener('transitionend', removeAnimation)
+    }, { once: true })
+
+    return state
   }
 
   [col1, col2, col3] = dataProvider.getData({
@@ -85,13 +105,13 @@ function ViewNavigator (): React.JSX.Element {
     onResetColumns={onResetColumns}>
       <>
         <div className='viewNavigatorContainer'>
-            <Column id='col1' className={`col1 ${state.col1Classes}`} style={state.col1Style}>
+            <Column ref={state.columns[0]} id='col1' className={`col1 ${state.col1Classes}`} style={state.col1Style}>
               <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col1 }} />
             </Column>
-            <Column id='col2' className={`col2 ${state.col2Classes}`} style={state.col2Style}>
+            <Column ref={state.columns[1]} id='col2' className={`col2 ${state.col2Classes}`} style={state.col2Style}>
               <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col2 }} />
             </Column>
-            <Column id='col3' className={`col3 ${state.col3Classes}`} style={state.col3Style}>
+            <Column ref={state.columns[2]} id='col3' className={`col3 ${state.col3Classes}`} style={state.col3Style}>
               <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col3 }} />
             </Column>
         </div>

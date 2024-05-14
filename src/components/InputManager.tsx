@@ -1,6 +1,6 @@
 import * as React from 'react'
 import Utils from '../Utils'
-import { InputManagerProps } from '../types/InputManager'
+import { type InputManagerProps } from '../types/InputManager'
 import TouchManager from './TouchManager'
 import KeyboardManager from './KeyboardManager'
 
