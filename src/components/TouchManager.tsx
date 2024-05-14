@@ -26,7 +26,7 @@ function TouchManager ({
     body.addEventListener(Utils.isMobile() ? 'touchstart' : 'mousedown', onTouchStart)
     body.addEventListener(Utils.isMobile() ? 'touchmove' : 'mousemove', onTouchMove)
     body.addEventListener(Utils.isMobile() ? 'touchend' : 'mouseup', onTouchEnd)
-    window.addEventListener('resize', onResetColumns())
+    window.addEventListener('resize', onResetColumns)
   }
 
   function removeEvents (): void {
@@ -34,7 +34,7 @@ function TouchManager ({
     body.removeEventListener(Utils.isMobile() ? 'touchmove' : 'mousemove', onTouchMove)
     body.removeEventListener(Utils.isMobile() ? 'touchend' : 'mouseup', onTouchEnd)
 
-    window.removeEventListener('resize', onResetColumns())
+    window.removeEventListener('resize', onResetColumns)
   }
 
   function onTouchStart (nativeEvent: TouchEvent | MouseEvent): void {

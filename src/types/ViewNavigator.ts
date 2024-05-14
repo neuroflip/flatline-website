@@ -1,3 +1,5 @@
+import { type RefObject } from 'react'
+
 interface ViewNavigatorState {
   index: number
   lastMove: number
@@ -7,7 +9,7 @@ interface ViewNavigatorState {
   col1Style: React.CSSProperties
   col2Style: React.CSSProperties
   col3Style: React.CSSProperties
-  columns: TrustedHTML[]
+  columns: Array<RefObject<HTMLDivElement>>
 }
 
 export const MOVE_LEFT = 0
