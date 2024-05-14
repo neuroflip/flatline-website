@@ -39,6 +39,10 @@ function ViewNavigator (): React.JSX.Element {
     setState((state: ViewNavigatorState) => {
       const newState = transitionManager.onPageChange({ ...state }, finalProgressX, columnWidth.current)
 
+      setTimeout(() => {
+        setState(transitionManager.removeAnimation(newState))
+      }, 300)
+
       return newState
     })
   }
@@ -52,6 +56,10 @@ function ViewNavigator (): React.JSX.Element {
   function onResetColumns (): void {
     setState((state: ViewNavigatorState) => {
       const newState = transitionManager.onResetColumns({ ...state }, columnWidth.current)
+
+      setTimeout(() => {
+        setState(transitionManager.removeAnimation(newState))
+      }, 300)
 
       return newState
     })
