@@ -42,32 +42,36 @@ class ViewNavigatorTransitionManager {
   }
 
   onResetColumns (state: ViewNavigatorState, columnWidth: number): ViewNavigatorState {
+    const signal1 = ((String)(state.col1Style.transform)?.indexOf('-') >= 0) ? -1 : 1
+    const signal2 = ((String)(state.col2Style.transform)?.indexOf('-') >= 0) ? -1 : 1
+    const signal3 = ((String)(state.col3Style.transform)?.indexOf('-') >= 0) ? -1 : 1
+
     if (state.lastMove === MOVE_LEFT) {
       if (state.col1Classes.includes('current')) {
         state.col1Style = { transform: 'translate(0px, 0px)' }
-        state.col2Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
-        state.col3Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
+        state.col2Style = { transform: `translate(${signal2 * columnWidth}px,0) scale(0.5)` }
+        state.col3Style = { transform: `translate(${signal3 * columnWidth}px,0) scale(0.5)` }
       } else if (state.col2Classes.includes('current')) {
-        state.col1Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
+        state.col1Style = { transform: `translate(${signal1 * columnWidth}px,0) scale(0.5)` }
         state.col2Style = { transform: 'translate(0px,0)' }
-        state.col3Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
+        state.col3Style = { transform: `translate(${signal3 * columnWidth}px,0) scale(0.5)` }
       } else if (state.col3Classes.includes('current')) {
-        state.col1Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
-        state.col2Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
+        state.col1Style = { transform: `translate(${signal1 * columnWidth}px,0) scale(0.5)` }
+        state.col2Style = { transform: `translate(${signal2 * columnWidth}px,0) scale(0.5)` }
         state.col3Style = { transform: 'translate(0px,0)' }
       }
     } else {
       if (state.col1Classes.includes('current')) {
         state.col1Style = { transform: 'translate(0px, 0px)' }
-        state.col2Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
-        state.col3Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
+        state.col2Style = { transform: `translate(${signal2 * columnWidth}px,0) scale(0.5)` }
+        state.col3Style = { transform: `translate(${signal3 * columnWidth}px,0) scale(0.5)` }
       } else if (state.col2Classes.includes('current')) {
-        state.col1Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
+        state.col1Style = { transform: `translate(${signal1 * columnWidth}px,0) scale(0.5)` }
         state.col2Style = { transform: 'translate(0px,0)' }
-        state.col3Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
+        state.col3Style = { transform: `translate(${signal3 * columnWidth}px,0) scale(0.5)` }
       } else if (state.col3Classes.includes('current')) {
-        state.col1Style = { transform: `translate(${-columnWidth}px,0) scale(0.5)` }
-        state.col2Style = { transform: `translate(${columnWidth}px,0) scale(0.5)` }
+        state.col1Style = { transform: `translate(${signal1 * columnWidth}px,0) scale(0.5)` }
+        state.col2Style = { transform: `translate(${signal2 * columnWidth}px,0) scale(0.5)` }
         state.col3Style = { transform: 'translate(0px,0)' }
       }
     }
