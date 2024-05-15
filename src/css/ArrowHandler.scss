@@ -10,11 +10,13 @@
     font-size: 0.5em;
     line-height: 12px;
     text-shadow: 3px 3px black;
-    background-color: rgba($color: #5f9ea0, $alpha: 0.5);
+    background-color: rgba($color: #333, $alpha: 0.5);
+    border: 1px solid #777;
     border-radius: 10px;
     padding: 13px;
     pointer-events: all;
     width: 15%;
+    z-index: 100;
 }
 
 .arrowHandler.left {
