@@ -7,7 +7,6 @@ import '../css/Flatline.scss'
 function Flatline (): React.JSX.Element {
   return (<>
       <Header></Header>
-      <div className='initialText'></div>
       <ViewNavigator></ViewNavigator>
     </>)
 }

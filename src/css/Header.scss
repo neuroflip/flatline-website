@@ -5,10 +5,21 @@ header {
     width: 100%;
     height: 72px;
 
-    svg {
+    svg.logo {
         margin: 12px;
         cursor: pointer;
         height: 50px;
+    }
+
+    svg.githubLogo {
+        float: right;
+        margin-top: 18px;
+        margin-right: 15px;
+
+        path {
+            fill: #fff;
+            cursor: pointer;
+        }
     }
 
     .headerText {
