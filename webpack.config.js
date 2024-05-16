@@ -62,7 +62,8 @@ module.exports = {
         { from: 'static/logo4.png', to: 'logo4.png' },
         { from: 'static/logo5.png', to: 'logo5.png' },
         { from: 'static/logo6.png', to: 'logo6.png' },
-        { from: 'static/logo7.png', to: 'logo7.png' }
+        { from: 'static/logo7.png', to: 'logo7.png' },
+        { from: 'static/logo8.png', to: 'logo8.png' }
       ],
     }),
     new HtmlWebpackPlugin({

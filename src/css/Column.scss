@@ -8,6 +8,7 @@
     padding: 0 5px;
     border-radius: 21px;
     z-index: -10;
+    opacity: 0.4;
 
     a {
         max-width: 850px;
@@ -81,13 +82,6 @@
 #col3.animated {
     transition: 0.4s ease-in-out;
     pointer-events: none;
-    opacity: 0.4;
-}
-
-#col1.animated.current,
-#col2.animated.current,
-#col3.animated.current {
-    opacity: 1.0;
 }
 
 .col1::-webkit-scrollbar,
@@ -108,6 +102,7 @@
 #col2.current,
 #col3.current {
     z-index: 10;
+    opacity: 1.0;
 }
 
 @media only screen and (min-width : 400px) {
