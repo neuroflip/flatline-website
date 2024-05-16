@@ -1,9 +1,10 @@
-import Column1Data from './data/Column1.html'
-import Column2Data from './data/Column2.html'
-import Column3Data from './data/Column3.html'
-import Column4Data from './data/Column4.html'
-import Column5Data from './data/Column5.html'
-import Column6Data from './data/Column6.html'
+import Column1Data from './data/Crawlear.html'
+import Column2Data from './data/ObsoleteEngine.html'
+import Column3Data from './data/Tunnel.html'
+import Column4Data from './data/Pulgon.html'
+import Column5Data from './data/SpaceTrash.html'
+import Column6Data from './data/Tetris.html'
+import Column7Data from './data/AMP.html'
 
 const mod = (x: number, y: number): number => {
   return ((x % y) + y) % y
@@ -18,7 +19,8 @@ class DataProvider {
       Column3Data,
       Column4Data,
       Column5Data,
-      Column6Data]
+      Column6Data,
+      Column7Data]
   }
 
   getCurrent (index: number): TrustedHTML {
