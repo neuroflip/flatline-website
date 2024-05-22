@@ -4,9 +4,95 @@ html, body {
 }
 
 body {
+    font-size: 16px;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #aaa;
+    font-family: 'Victor Mono';
+    overflow: scroll;
+}
+
+a {
+    color: black;
+}
+
+canvas {
+    position: absolute;
+    z-index: -10;
+    top: 72px;
+    right: 27%;
+}
+
+.crawlearLogo {
+    width: 79px;
+    margin: 0 25px 0 0;
+    float: left;
+    background-color: #333;
+    border-radius: 10%;
+}
+
+.photo {
+    border: 1px solid #333;
+    border-radius: 64px;
+    width: 75px;
+    display: inline;
+    float: left;
+    margin: 0 15px 15px 15px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 15px 15px 0 15px
+}
+
+h2 {
+    font-size: 0.7em;
+}
+
+p:first-of-type {
+    margin: 65px 25px 0 25px;
+}
+
+p { margin: 25px; }
+
+.flatline-mainContainer {
+    width: 98%;
+    margin: 25px auto;
+}
+
+.tagContainer {
+    margin: 63px 25px 25px 25px;
+}
+
+button {
+    border-radius: 14px;
+    background-color: #333;
+    color: white;
+    display: block;
+    width: 56%;
+    padding: 15px;
+    margin: 64px auto;
+    font-size: 1em;
+    font-family: 'Victor Mono';
+}
+
+.initialText {
+    margin: 15px;
+}
+
+@media only screen and (min-width : 500px) {
+    .flatline-mainContainer {
+        width: 63%;
+        max-width: 800px;
+
+        h1 { 
+            font-size: 2em; 
+        }
+        h2 { 
+            margin: 0;
+            float: unset;
+        }
+    }   
 }

@@ -1,4 +1,4 @@
-import { type RefObject } from 'react'
+import { MouseEventHandler, type RefObject } from 'react'
 
 interface ViewNavigatorState {
   index: number
@@ -12,7 +12,11 @@ interface ViewNavigatorState {
   columns: Array<RefObject<HTMLDivElement>>
 }
 
+interface ViewNavigatorProps {
+  onClose: MouseEventHandler<HTMLDivElement>
+}
+
 export const MOVE_LEFT = 0
 export const MOVE_RIGHT = 1
 
-export type { ViewNavigatorState }
+export type { ViewNavigatorState, ViewNavigatorProps }

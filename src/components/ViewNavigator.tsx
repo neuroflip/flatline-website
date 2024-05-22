@@ -5,8 +5,9 @@ import ArrowHandler from './ArrowHandler'
 import useViewNavigator from '../hooks/useViewNavigator'
 
 import '../css/ViewNavigator.scss'
+import { ViewNavigatorProps } from '../types/ViewNavigator'
 
-function ViewNavigator (): React.JSX.Element {
+function ViewNavigator ({ onClose }: ViewNavigatorProps): React.JSX.Element {
   const [state, col1, col2, col3, onPageChange, onMovePage, onResetColumns, onArrowLeftClick, onArrowRightClick] = useViewNavigator()
 
   return <InputManager onPageChange={onPageChange}
@@ -14,6 +15,7 @@ function ViewNavigator (): React.JSX.Element {
     onMovePage={onMovePage}
     onResetColumns={onResetColumns}>
       <>
+        <div className='closeButton' onClick={onClose}>x</div>
         <div className='viewNavigatorContainer'>
             <Column ref={state.columns[0]} id='col1' className={`col1 ${state.col1Classes}`} style={state.col1Style}>
               <div className="columnContainer" dangerouslySetInnerHTML={{ __html: col1 }} />
