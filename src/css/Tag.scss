@@ -1,0 +1,16 @@
+.tag {
+    background-color: #333;
+    color: white;
+    font-size: 0.7em;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 4px;
+    display: inline-block;
+    font-family: 'Victor Mono';
+    box-shadow: 4px -4px teal;
+}
+
+.tag:hover {
+    box-shadow: 4px -4px teal,
+        8px -8px 10px 3px orange;
+}
