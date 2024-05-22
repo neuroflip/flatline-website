@@ -8,7 +8,7 @@ let Util = {
 		XROTATE_INITIAL: 178,
 		YROTATE_INITIAL: 45,
 		//CLEAR_COLOR: "rgba(255, 255, 255, 0.0)",
-        CLEAR_COLOR: "#aaa",
+        CLEAR_COLOR: "#000",
 
 	 	createArray(length) {
 		    var arr = new Array(length || 0),

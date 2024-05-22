@@ -1,16 +1,19 @@
+.tagContainer {
+    margin: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+}
+
 .tag {
     background-color: #333;
     color: white;
     font-size: 0.7em;
-    padding: 10px;
-    border-radius: 25px;
+    padding: 15px;
+    border-radius: 15px;
     margin: 4px;
     display: inline-block;
-    font-family: 'Victor Mono';
-    box-shadow: 4px -4px teal;
-}
-
-.tag:hover {
-    box-shadow: 4px -4px teal,
-        8px -8px 10px 3px orange;
+    font-family: "Victor Mono";
+     flex: 1 1 auto;
+     text-align: center;
 }

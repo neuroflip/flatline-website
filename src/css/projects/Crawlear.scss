@@ -1,0 +1,28 @@
+.crawlear.card {
+    background-color: #888;
+    margin: 0 auto;
+    display: block;
+    margin: 25px;
+}
+
+.crawlear.textContainer:before {
+    content: "rc tool";
+    background-color: teal;
+    display: block;
+    float: right;
+    text-align: center;}
+
+div.crawlear a#githubLogo {
+    display: inline;
+    width: 40px;
+}
+.coverTitle {
+    margin-top: 0;
+}
+
+.coverTitle,
+.coverText {
+    width: 100%;
+    margin: 0px auto;
+    color: white;
+}

@@ -9,20 +9,21 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #aaa;
+    background-color: black;
+    color: white;
     font-family: 'Victor Mono';
     overflow: scroll;
 }
 
 a {
-    color: black;
+    color: white;
 }
 
 canvas {
     position: absolute;
     z-index: -10;
-    top: 72px;
-    right: 27%;
+    top: 0px;
+    right: 0;
 }
 
 .crawlearLogo {
@@ -33,13 +34,17 @@ canvas {
     border-radius: 10%;
 }
 
+.titleContainer {
+    position: relative;
+}
+
 .photo {
     border: 1px solid #333;
     border-radius: 64px;
     width: 75px;
     display: inline;
     float: left;
-    margin: 0 15px 15px 15px;
+    margin: 5px 25px;
 }
 
 h1 {
@@ -51,19 +56,25 @@ h2 {
     font-size: 0.7em;
 }
 
-p:first-of-type {
-    margin: 65px 25px 0 25px;
+.card {
+    background-color: #666;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 25px;
 }
 
-p { margin: 25px; }
+.opentowork {
+    text-align: right;
+    margin-right: 25px;
+}
+
+.initialIcons {
+    text-align: center;
+}
 
 .flatline-mainContainer {
     width: 98%;
-    margin: 25px auto;
-}
-
-.tagContainer {
-    margin: 63px 25px 25px 25px;
+    margin: 88px auto;
 }
 
 button {
