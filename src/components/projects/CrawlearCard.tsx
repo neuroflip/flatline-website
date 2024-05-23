@@ -6,17 +6,13 @@ import crawlearLogo from '../../../static/logocrawlear.png'
 import '../../css/projects/Crawlear.scss'
 
 function CrawlearCard() {
-    return <div className='crawlear card'>
-        <IconLink url="https://crawlear.com" imageClassName='crawlearLogo' iconImage={crawlearLogo} iconAlt='crawlear logo'></IconLink>
-
-        <div className="textContainer crawlear">
-            <div className="coverText">
-                <IconLink url='https://github.com/crawlear-com/crawlear-com.github.io' iconImage={gitHubLogo}></IconLink>
-                Owner and main developer of crawlear.com .
-                <p>For <u>Rock Crawler</u> fans is a professional and social scoring board for your 1/10 or 1/24 Crawler events or competitions compatible with the rules of AECAR, ISRCC, Levante 1/24, Mini Crawler Passion and the ZonaRc Regional Championship.</p>
-                <p>For <u>Scale Crawler</u> fans is a Route repository with a search map where pilots can create new public routes using actual GPS data</p>
-            </div>
-        </div>
+    return <div className='halfcard card'>
+        <p>
+          <IconLink url="https://crawlear.com" imageClassName='crawlearLogo' iconImage={crawlearLogo} iconAlt='crawlear logo'></IconLink>
+          <IconLink url="https://github.com/crawlear-com/crawlear-com.github.io" imageClassName='githubLogo' iconImage={gitHubLogo} iconAlt='github logo'></IconLink>
+          Owner and main developer of <a href="https://crawlear.com">crawlear.com</a>, 
+          an online service for professionals and fans of Rock and Scale Rc Crawlers trying to bring new technology and solutions for the hobby.
+        </p>
     </div>
 }
 

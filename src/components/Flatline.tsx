@@ -6,6 +6,7 @@ import Engine from '../ObsoleteEngine/Engine'
 import Title from './Title'
 import TagCard from './TagCard'
 import CrawlearCard from './projects/CrawlearCard'
+import ObsoleteEngineCard from './projects/ObsoleteEngineCard'
 
 import crawlearLogo from '../../static/logocrawlear.png'
 import '../css/Flatline.scss'
@@ -34,8 +35,10 @@ function Flatline (): React.JSX.Element {
         <p className='card'>Working with modern web applications since 2002, helping several bcn tech startups (MedHouses, Cybex, Layers, <b>Marfeel</b>) building awsome products 
           and working with international and multidisciplinary teams.</p>
         <TagCard></TagCard>
-
-        <CrawlearCard></CrawlearCard>
+        <div className='projects'>
+          <CrawlearCard></CrawlearCard>
+          <ObsoleteEngineCard></ObsoleteEngineCard>
+        </div>
       { state ? 
         <ViewNavigator onClose={onClose}></ViewNavigator> : <></> }
         <button className='projectsButton' onClick={renderProjects}>View some projects</button>

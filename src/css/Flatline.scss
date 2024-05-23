@@ -26,6 +26,13 @@ canvas {
     right: 0;
 }
 
+.projects {
+    display: flex;
+    .halfcard {
+        flex: 1 1 auto;
+    }
+}
+
 .crawlearLogo {
     width: 79px;
     margin: 0 25px 0 0;
