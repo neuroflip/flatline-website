@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./ui/Header";
 import ContentHeader from "./ui/ContentHeader";
 import InternalLinks from "./ui/InternalLinks";
