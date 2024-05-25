@@ -32,7 +32,6 @@ function UIIntersector({ onIntersect, children }: UIIntersectorProps) {
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(intersectHandler, options);
-
     if (elementRef.current) {
       elementRef.current.style.scale = "0.8";
     } 
