@@ -11,7 +11,7 @@ const config: Config = {
   coverageProvider: 'babel',
   testEnvironment: 'jsdom',
   transform: {
-    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.jsx?$': ['babel-jest', {  "configFile": "./babel.config.test.js"  }]
   },
   // Add more setup options before each test is run
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
