@@ -13,6 +13,9 @@ function CrawlearTags() {
       <Tag text='leaflet'></Tag>
       <Tag text='jest tests core features'></Tag>
       <Tag text='Bluethooth web API'></Tag>
+      <Tag text='jest'></Tag>
+      <Tag text='integration tests'></Tag>
+      <Tag text='unit tests'></Tag>
   </div>
 }
 

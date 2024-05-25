@@ -12,7 +12,7 @@ function ProjectObsolete () {
         3D wireframe basic engine. It can use objects from Blender or other 3D edition program using RAW format.
       </div>
       <div className='p-5'>
-        <b>Check the top of the page. The rotating wireframe sphere is done in realtime with the 3dEngine</b>
+        <b>** Check the top of the page. The rotating wireframe sphere is done in realtime with the 3dEngine</b>
         <ProjectObsoleteTags></ProjectObsoleteTags>
       </div></>    
   </Project>
