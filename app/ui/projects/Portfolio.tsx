@@ -12,7 +12,6 @@ function Portfolio () {
       This site. Personal portfolio of some projects and experiments during the last years.
       <PorfolioTags></PorfolioTags>
     </div>
-    
   </Project>
 
 }

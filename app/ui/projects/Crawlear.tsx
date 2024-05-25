@@ -13,7 +13,6 @@ function Crawlear () {
       an online service for professionals and fans of Rock and Scale Rc Crawlers trying to bring new technology and solutions for the hobby.
       <CrawlearTags></CrawlearTags>
     </div>
-    
   </Project>
 
 }

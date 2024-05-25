@@ -1,6 +1,6 @@
 import * as Reacrt from 'react'
 import Project from './Project'
-import IconLink from '../IconLink'
+import PulgonTags from './PulgonTags'
 
 function Pulgon () {
   return <Project linkUrl='http://flatline.hopto.org/pulgon/' 
@@ -9,9 +9,9 @@ function Pulgon () {
     <div className='p-5'>
       2D Shoote'm up 2D custom Canvas Engine. 2 Levels, several enemies, shoot upgrade, and others.
       <br /> Touch and keyboard controls.
+      <PulgonTags></PulgonTags>
     </div>
   </Project>
-
 }
 
 export default Pulgon

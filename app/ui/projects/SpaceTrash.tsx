@@ -11,7 +11,6 @@ function SpaceTrash () {
       <SpaceTrashTags></SpaceTrashTags>
     </div>
   </Project>
-
 }
 
 export default SpaceTrash

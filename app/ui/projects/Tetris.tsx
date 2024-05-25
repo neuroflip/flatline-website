@@ -13,7 +13,6 @@ function Tetris () {
     <TetrisTags></TetrisTags>
     </div>
   </Project>
-
 }
 
 export default Tetris
