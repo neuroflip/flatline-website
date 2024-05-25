@@ -53,7 +53,7 @@ describe('UIInterceptor', () => {
     expect(parentElement?.className).toEqual("relative")
   })
 
-  it('on scroll changes styles correctly', () => {
+  it('on intercept changes styles correctly', () => {
     render(<UIIntersector>
       <div>div content</div>
     </UIIntersector>)
