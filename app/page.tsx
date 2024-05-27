@@ -3,16 +3,11 @@ import ContentHeader from "./ui/ContentHeader";
 import InternalLinks from "./ui/InternalLinks";
 import ObsoleteEngine from "./ui/ObsoleteEngine/ObsoleteEngine";
 import TagCard from "./ui/TagCard";
-import Card from "./ui/Card";
-import Crawlear from "./ui/projects/Crawlear";
-import ProjectObsolete from "./ui/projects/ProjectObsolete";
-import AHX from "./ui/projects/AHX";
 import Title from "./ui/Title";
-import Tunnel from "./ui/projects/Tunnel";
-import Pulgon from "./ui/projects/Pulgon";
-import SpaceTrash from "./ui/projects/SpaceTrash";
-import Tetris from "./ui/projects/Tetris";
-import Portfolio from "./ui/projects/Portfolio";
+import Introduction from "./ui/Introduction";
+import Projects from "./ui/Projects";
+import Experiments from "./ui/Experiments";
+
 
 export default function Home() {
   return (
@@ -30,33 +25,9 @@ export default function Home() {
       <ContentHeader></ContentHeader>
       <InternalLinks></InternalLinks>
 
-      <div id="introduction">
-        <Title><>INTRODUCTION</></Title>
-        <Card extraClassName="p-6 mt-0">
-          <>
-            <p>Social and friendly person interested in web sites since the late 90’s. Passionate about innovation in all that I do.</p>
-            <p className="mt-5">Working with modern web applications since 2002, helping several bcn tech startups (MedHouses, Cybex, Layers, <b>Marfeel</b>) building awsome products and working with international and multidisciplinary teams.</p>
-          </>
-        </Card>
-      </div>
-      <div id="projects">
-        <Title><>PROJECTS</></Title>
-        <Crawlear></Crawlear>
-        <ProjectObsolete></ProjectObsolete>
-        <Portfolio></Portfolio>
-        <AHX></AHX>
-      </div>
-      <div id="experiments">
-        <Title><>EXPERIMENTS</></Title>
-        <Tunnel></Tunnel>
-        <Pulgon></Pulgon>
-        <SpaceTrash></SpaceTrash>
-        <Tetris></Tetris>
-      </div>
-      <div id="interests">
-        <Title><>INTERESTS</></Title>
-        <TagCard></TagCard>
-      </div>
+      <Introduction></Introduction>
+      <Projects></Projects>
+      <Experiments></Experiments>
     </main>
   );
 }

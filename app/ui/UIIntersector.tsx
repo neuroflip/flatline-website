@@ -15,26 +15,16 @@ function UIIntersector({ onIntersect, children }: UIIntersectorProps) {
     threshold: buildThresholdList(),
   }
   const intersectHandler = onIntersect || function (entries, observer) {
-    let prevRatio = 0;
-
     entries.forEach((entry)=>{
       const element = (entry.target as HTMLDivElement)
-      const scaleValue = Math.max(0.95, entry.intersectionRatio)
-
-      if (entry.intersectionRatio > prevRatio) { 
-        element.style.scale = `${scaleValue}`
-      } 
 
       element.style.opacity = `${entry.intersectionRatio}`
-      prevRatio = entry.intersectionRatio;
     })
   }
 
   React.useEffect(() => {
     const observer = new IntersectionObserver(intersectHandler, options);
-    if (elementRef.current) {
-      elementRef.current.style.scale = "0.8";
-    } 
+
     elementRef.current && observer.observe(elementRef.current);
   }, [])
 

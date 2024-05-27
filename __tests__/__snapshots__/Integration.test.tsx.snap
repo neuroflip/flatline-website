@@ -174,24 +174,24 @@ exports[`renders correctly 1`] = `
       INTRODUCTION
     </div>
     <div
-      className="relative"
+      className="justify-normal bg-slate-500 rounded-xl mb-6 p-6 mt-0"
     >
-      <div
-        className="justify-normal bg-slate-500 rounded-xl mb-6 p-6 mt-0"
+      <p>
+        Social and friendly person interested in web sites since the late 90’s. Passionate about innovation in all that I do.
+      </p>
+    </div>
+    <div
+      className="justify-normal bg-slate-500 rounded-xl mb-6 p-6 mt-0"
+    >
+      <p
+        className="mt-5"
       >
-        <p>
-          Social and friendly person interested in web sites since the late 90’s. Passionate about innovation in all that I do.
-        </p>
-        <p
-          className="mt-5"
-        >
-          Working with modern web applications since 2002, helping several bcn tech startups (MedHouses, Cybex, Layers, 
-          <b>
-            Marfeel
-          </b>
-          ) building awsome products and working with international and multidisciplinary teams.
-        </p>
-      </div>
+        Working with modern web applications since 2002, helping several bcn tech startups (MedHouses, Cybex, Layers, 
+        <b>
+          Marfeel
+        </b>
+        ) building awsome products and working with international and multidisciplinary teams.
+      </p>
     </div>
   </div>
   <div
@@ -649,12 +649,12 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    id="experiments"
+    id="projects"
   >
     <div
       className="text-cyan-400 text-sm text-right pt-14 w-full"
     >
-      EXPERIMENTS
+      PROJECTS
     </div>
     <div
       className="relative"
@@ -664,7 +664,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            href="http://flatline.hopto.org/fx0/"
+            href="https://crawlear.com"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -673,7 +673,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectTunnel.png')",
+                  "backgroundImage": "url('/crawlearSite.png')",
                 }
               }
             />
@@ -682,215 +682,12 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              href="http://flatline.hopto.org/fx0/"
+              href="https://crawlear.com"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
             >
-              2d Tunnel Fx
-            </a>
-          </div>
-          <div
-            className="p-5"
-          >
-            Classic 2d Tunnel Effect implemented in canvas2d and javascript
-            <div
-              className="m-6 flew-row flex-wrap flex"
-            >
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Vanilla Javascript
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Canvas 2D
-                 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="relative"
-    >
-      <div
-        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
-      >
-        <div>
-          <a
-            href="http://flatline.hopto.org/pulgon/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            <div
-              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
-              style={
-                {
-                  "backgroundImage": "url('/projectPulgon.png')",
-                }
-              }
-            />
-          </a>
-          <div
-            className="text-3xl text-center mt-5 mr-5 mb-0"
-          >
-            <a
-              href="http://flatline.hopto.org/pulgon/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              Pulgon shoot'm up Engine Demo
-            </a>
-          </div>
-          <div
-            className="p-5"
-          >
-            2D Shoote'm up 2D custom Canvas Engine. 2 Levels, several enemies, shoot upgrade, and others.
-            <br />
-             Touch and keyboard controls.
-            <div
-              className="m-6  flew-row flex-wrap flex"
-            >
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Vanilla Javascript
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Canvas 2D
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Touch / mobile
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                keyboard / desktop
-                 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="relative"
-    >
-      <div
-        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
-      >
-        <div>
-          <a
-            href="http://flatline.hopto.org/asteroid/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            <div
-              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
-              style={
-                {
-                  "backgroundImage": "url('/projectSpaceTrash.png')",
-                }
-              }
-            />
-          </a>
-          <div
-            className="text-3xl text-center mt-5 mr-5 mb-0"
-          >
-            <a
-              href="http://flatline.hopto.org/asteroid/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              Space Trash Demo
-            </a>
-          </div>
-          <div
-            className="p-5"
-          >
-            2D Vector game. Avoid space trash collisions with earth.
-            <div
-              className="m-6  flew-row flex-wrap flex"
-            >
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Vanilla Javascript
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Canvas 2D
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                keyboard / desktop
-                 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="relative"
-    >
-      <div
-        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
-      >
-        <div>
-          <a
-            href="http://flatline.hopto.org/tetris/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            <div
-              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
-              style={
-                {
-                  "backgroundImage": "url('/projectTetris.png')",
-                }
-              }
-            />
-          </a>
-          <div
-            className="text-3xl text-center mt-5 mr-5 mb-0"
-          >
-            <a
-              href="http://flatline.hopto.org/tetris/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              Tetris!
+              Crawlear.com
             </a>
           </div>
           <div
@@ -898,7 +695,7 @@ exports[`renders correctly 1`] = `
           >
             <a
               className=""
-              href="https://github.com/neuroflip/simple-tetris"
+              href="https://github.com/crawlear-com/crawlear-com.github.io"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
@@ -909,9 +706,172 @@ exports[`renders correctly 1`] = `
                 src="/logoGithub.png"
               />
             </a>
-            2D Canvas simple Tetris as a dev exercise.
+            Owner and main developer of 
+            <a
+              href="https://crawlear.com"
+            >
+              crawlear.com
+            </a>
+            , an online service for professionals and fans of Rock and Scale Rc Crawlers trying to bring new technology and solutions for the hobby.
             <div
               className="m-6 flew-row flex-wrap flex"
+            >
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                React SPA
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                PWA caching
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Offline features
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Firebase
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Google Signin
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Multilanguge
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Social features
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                leaflet
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                jest tests core features
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Bluethooth web API
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                jest
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                integration tests
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                unit tests
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="relative"
+    >
+      <div
+        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
+      >
+        <div>
+          <a
+            href="http://flatline.hopto.org/3dEngine/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
+              style={
+                {
+                  "backgroundImage": "url('/projectObsolete.png')",
+                }
+              }
+            />
+          </a>
+          <div
+            className="text-3xl text-center mt-5 mr-5 mb-0"
+          >
+            <a
+              href="http://flatline.hopto.org/3dEngine/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              Obsolete Engine
+            </a>
+          </div>
+          <div
+            className="p-5"
+          >
+            <a
+              className=""
+              href="https://github.com/neuroflip/ObsoleteEngine/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              <img
+                alt="github logo"
+                className="float-left m-4"
+                src="/logoGithub.png"
+              />
+            </a>
+            3D wireframe basic engine. It can use objects from Blender or other 3D edition program using RAW format.
+          </div>
+          <div
+            className="p-5"
+          >
+            <b>
+              ** Check the top of the page. The rotating wireframe sphere is done in realtime with the 3dEngine
+            </b>
+            <div
+              className="m-6  flew-row flex-wrap flex"
             >
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
@@ -931,14 +891,14 @@ exports[`renders correctly 1`] = `
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                Touch / mobile
+                3d animation
                  
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                keyboard / desktop
+                blender import scripts
                  
               </div>
             </div>
@@ -946,157 +906,199 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div
-    id="interests"
-  >
     <div
-      className="text-cyan-400 text-sm text-right pt-14 w-full"
+      className="relative"
     >
-      INTERESTS
+      <div
+        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
+      >
+        <div>
+          <a
+            href="http://flatline.hopto.org"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
+              style={
+                {
+                  "backgroundImage": "url('/projectPortfolio.png')",
+                }
+              }
+            />
+          </a>
+          <div
+            className="text-3xl text-center mt-5 mr-5 mb-0"
+          >
+            <a
+              href="http://flatline.hopto.org"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              JSLab And Experiments
+            </a>
+          </div>
+          <div
+            className="p-5"
+          >
+            <a
+              className=""
+              href="https://github.com/neuroflip/flatline-website"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              <img
+                alt="github logo"
+                className="float-left m-4"
+                src="/logoGithub.png"
+              />
+            </a>
+            This site. Personal portfolio of some projects and experiments during the last years.
+            <div
+              className="m-6 flew-row flex-wrap flex"
+            >
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                React
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Nextjs
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                tailwind css
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                server components
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                client components
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Intersection Observer
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                jest
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                integration tests
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                unit tests
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div
-      className="mb-6 mt-0 flew-row flex-wrap flex"
+      className="relative"
     >
       <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
       >
-         
-        front-end
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        html
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        scss
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        javascript
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        ES6
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        typescript
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        react
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        nextjs
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        pwa
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        workbox
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        spa
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        storybook
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        cordova apps
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        app store
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        google play
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        amp pages
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        instant articles
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        webpack
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        testing
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        jest
-         
+        <div>
+          <a
+            href="http://ahxmidiplayer.hopto.org/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
+              style={
+                {
+                  "backgroundImage": "url('/projectAHX.png')",
+                }
+              }
+            />
+          </a>
+          <div
+            className="text-3xl text-center mt-5 mr-5 mb-0"
+          >
+            <a
+              href="http://ahxmidiplayer.hopto.org/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              AHX Midi Player
+            </a>
+          </div>
+          <div
+            className="p-5"
+          >
+            <a
+              className=""
+              href="https://github.com/neuroflip/AhxMidiPlayer"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              <img
+                alt="github logo"
+                className="float-left m-4"
+                src="/logoGithub.png"
+              />
+            </a>
+            AMP is a try to get some MIDI features using the AHX engine sounds at Commodore Amiga Range of computers. You can assign midi channels to ahx instruments, bang notes using NOTE ON midi messages or edit ahx instrument parameters like the ADSR curve using CC midi commands.
+            <div
+              className="m-6  flew-row flex-wrap flex"
+            >
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                HTML
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Google Analitics
+                 
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
