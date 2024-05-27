@@ -2,7 +2,7 @@ import Header from "./ui/Header";
 import ContentHeader from "./ui/ContentHeader";
 import InternalLinks from "./ui/InternalLinks";
 import ObsoleteEngine from "./ui/ObsoleteEngine/ObsoleteEngine";
-import TagCard from "./ui/TagCard";
+import Interests from "./ui/Interests";
 import Title from "./ui/Title";
 import Introduction from "./ui/Introduction";
 import Projects from "./ui/Projects";
@@ -28,6 +28,7 @@ export default function Home() {
       <Introduction></Introduction>
       <Projects></Projects>
       <Experiments></Experiments>
+      <Interests></Interests>
     </main>
   );
 }
