@@ -16,7 +16,7 @@ export default function Home() {
         <div className="fixed left-0 top-0 flex w-full justify-center border-b bg-gradient-to-b pb-6 pt-8 backdrop-blur-2xl border-neutral-800 bg-zinc-800/30 from-inherit">
           <Header></Header>
         </div>
-        <div className="fixed bottom-0 left-0 flex h-12 w-full items-end justify-center bg-gradient-to-t from-black via-black lg:static lg:size-auto lg:bg-none">
+        <div className="fixed bottom-0 left-0 flex h-12 w-full items-end justify-center bg-gradient-to-t from-black via-black">
           <Title><div className="text-xs text-center text-gray-700">neuroflip - 2024</div></Title>
         </div>
       </div>
