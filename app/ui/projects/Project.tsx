@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Card from '../Card'
 import Link from 'next/link'
+import UIIntersector from '../UIIntersector'
 
 interface ProjectProps {
   title: string,
@@ -10,7 +11,8 @@ interface ProjectProps {
 }
 
 function Project ( { title, image, linkUrl, children } : ProjectProps ) {
-  return <Card extraClassName='bg-slate-800 p-0'>
+  return <UIIntersector>
+    <Card extraClassName='bg-slate-800 p-0'>
       <div>
         <Link href={linkUrl}>
           <div className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl" style={{ backgroundImage: `url('${image}')` }}></div>
@@ -23,6 +25,7 @@ function Project ( { title, image, linkUrl, children } : ProjectProps ) {
         { children }
       </div>
     </Card>
+  </UIIntersector>
 }
 
 export default Project

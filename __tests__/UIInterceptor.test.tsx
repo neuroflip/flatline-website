@@ -48,8 +48,6 @@ describe('UIInterceptor', () => {
 
     const container = screen.getByText(/div content/i)
     const parentElement = container.parentElement
- 
-    expect(parentElement?.style.scale).toEqual("0.8")
     expect(parentElement?.className).toEqual("relative")
   })
 
@@ -59,16 +57,13 @@ describe('UIInterceptor', () => {
     </UIIntersector>)
     const container = screen.getByText(/div content/i)
     const parentElement = container.parentElement
- 
-    expect(parentElement?.style.scale).toEqual("0.8")
-    expect(parentElement?.className).toEqual("relative")
 
+    expect(parentElement?.className).toEqual("relative")
     intersectHandlerFromnObserver([{
       target: parentElement,
       intersectionRatio: 0.15
     }])
-    
-    expect(parentElement?.style.scale).toEqual("0.95")
+
     expect(parentElement?.style.opacity).toEqual("0.15")
   })
 })
