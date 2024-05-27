@@ -1,17 +1,17 @@
 import * as React from 'react'
 import Title from './Title'
-import Crawlear from './projects/Crawlear'
-import ProjectObsolete from './projects/ProjectObsolete'
-import Portfolio from './projects/Portfolio'
-import AHX from './projects/AHX'
+import Tunnel from './projects/Tunnel'
+import Pulgon from './projects/Pulgon'
+import SpaceTrash from './projects/SpaceTrash'
+import Tetris from './projects/Tetris'
 
 function Experiments() {
   return <div id="projects">
-    <Title><>PROJECTS</></Title>
-    <Crawlear></Crawlear>
-    <ProjectObsolete></ProjectObsolete>
-    <Portfolio></Portfolio>
-    <AHX></AHX>
+    <Title><>EXPERIMENTS</></Title>
+    <Tunnel></Tunnel>
+    <Pulgon></Pulgon>
+    <SpaceTrash></SpaceTrash>
+    <Tetris></Tetris>
   </div>
 }
 
