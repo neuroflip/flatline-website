@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
       </header>
     </div>
     <div
-      className="fixed bottom-0 left-0 flex h-12 w-full items-end justify-center bg-gradient-to-t from-black via-black lg:static lg:size-auto lg:bg-none"
+      className="fixed bottom-0 left-0 flex h-12 w-full items-end justify-center bg-gradient-to-t from-black via-black"
     >
       <div
         className="text-cyan-400 text-sm text-right pt-14 w-full"
@@ -61,7 +61,9 @@ exports[`renders correctly 1`] = `
     <img
       alt="it's me!"
       className="w-15 rounded-full border-gray-800 border w-20 inline float-left mb-5 ml-5 mr-5"
-      src="/yo.png"
+      height="76px"
+      src="/yo.webp"
+      width="80px"
     />
     <h1
       className="text-xl m-15 mt-15 mr-15 mb-0 ml-15"
@@ -87,6 +89,7 @@ exports[`renders correctly 1`] = `
     className="flex-row flex-wrap flex"
   >
     <a
+      aria-label="Github Profile"
       className=""
       href="https://github.com/neuroflip/"
       onClick={[Function]}
@@ -95,11 +98,14 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="Github Profile"
-        className="m-5"
-        src="/logoGithub.png"
+        className="m-5 w-8 h-8"
+        height={32}
+        src="/logoGithub.webp"
+        width={32}
       />
     </a>
     <a
+      aria-label="Linkedin Profile"
       className=""
       href="https://www.linkedin.com/in/joseangelanguitarovira/"
       onClick={[Function]}
@@ -108,11 +114,14 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="Linkedin Profile"
-        className="m-5"
-        src="/logoLinkedIn.png"
+        className="m-5 w-8 h-8"
+        height={32}
+        src="/logoLinkedIn.webp"
+        width={32}
       />
     </a>
     <a
+      aria-label="Download Curriculum Vitae"
       className=""
       href="http://flatline.hopto.org/JoseAAnguitaCV.pdf"
       onClick={[Function]}
@@ -121,8 +130,10 @@ exports[`renders correctly 1`] = `
     >
       <img
         alt="Download Curriculum Vitae"
-        className="m-5"
-        src="/cvLogo.png"
+        className="m-5 w-8 h-8"
+        height={32}
+        src="/cvLogo.webp"
+        width={32}
       />
     </a>
   </p>
@@ -210,6 +221,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
+            aria-label="Link to https://crawlear.com"
             href="https://crawlear.com"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -219,7 +231,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/crawlearSite.png')",
+                  "backgroundImage": "url('/crawlearSite.webp')",
                 }
               }
             />
@@ -228,6 +240,7 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
+              aria-label="Link to https://crawlear.com"
               href="https://crawlear.com"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -240,6 +253,7 @@ exports[`renders correctly 1`] = `
             className="p-5"
           >
             <a
+              aria-label="github logo"
               className=""
               href="https://github.com/crawlear-com/crawlear-com.github.io"
               onClick={[Function]}
@@ -248,8 +262,8 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
+                className="w-8 h-8 float-left m-4"
+                src="/logoGithub.webp"
               />
             </a>
             Owner and main developer of 
@@ -366,6 +380,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
+            aria-label="Link to http://flatline.hopto.org/3dEngine/"
             href="http://flatline.hopto.org/3dEngine/"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -375,7 +390,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectObsolete.png')",
+                  "backgroundImage": "url('/projectObsolete.webp')",
                 }
               }
             />
@@ -384,6 +399,7 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
+              aria-label="Link to http://flatline.hopto.org/3dEngine/"
               href="http://flatline.hopto.org/3dEngine/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -396,6 +412,7 @@ exports[`renders correctly 1`] = `
             className="p-5"
           >
             <a
+              aria-label="github logo"
               className=""
               href="https://github.com/neuroflip/ObsoleteEngine/"
               onClick={[Function]}
@@ -404,8 +421,8 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
+                className="float-left m-4 w-8 h-8"
+                src="/logoGithub.webp"
               />
             </a>
             3D wireframe basic engine. It can use objects from Blender or other 3D edition program using RAW format.
@@ -460,6 +477,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
+            aria-label="Link to http://flatline.hopto.org"
             href="http://flatline.hopto.org"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -469,7 +487,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectPortfolio.png')",
+                  "backgroundImage": "url('/projectPortfolio.webp')",
                 }
               }
             />
@@ -478,6 +496,7 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
+              aria-label="Link to http://flatline.hopto.org"
               href="http://flatline.hopto.org"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -490,6 +509,7 @@ exports[`renders correctly 1`] = `
             className="p-5"
           >
             <a
+              aria-label="github logo"
               className=""
               href="https://github.com/neuroflip/flatline-website"
               onClick={[Function]}
@@ -498,8 +518,8 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
+                className="float-left m-4 w-8 h-8"
+                src="/logoGithub.webp"
               />
             </a>
             This site. Personal portfolio of some projects and experiments during the last years.
@@ -582,6 +602,7 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
+            aria-label="Link to http://ahxmidiplayer.hopto.org/"
             href="http://ahxmidiplayer.hopto.org/"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -591,7 +612,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectAHX.png')",
+                  "backgroundImage": "url('/projectAHX.webp')",
                 }
               }
             />
@@ -600,6 +621,7 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
+              aria-label="Link to http://ahxmidiplayer.hopto.org/"
               href="http://ahxmidiplayer.hopto.org/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -612,6 +634,7 @@ exports[`renders correctly 1`] = `
             className="p-5"
           >
             <a
+              aria-label="github logo"
               className=""
               href="https://github.com/neuroflip/AhxMidiPlayer"
               onClick={[Function]}
@@ -620,8 +643,8 @@ exports[`renders correctly 1`] = `
             >
               <img
                 alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
+                className="float-left m-4 w-8 h-8"
+                src="/logoGithub.webp"
               />
             </a>
             AMP is a try to get some MIDI features using the AHX engine sounds at Commodore Amiga Range of computers. You can assign midi channels to ahx instruments, bang notes using NOTE ON midi messages or edit ahx instrument parameters like the ADSR curve using CC midi commands.
@@ -654,7 +677,7 @@ exports[`renders correctly 1`] = `
     <div
       className="text-cyan-400 text-sm text-right pt-14 w-full"
     >
-      PROJECTS
+      EXPERIMENTS
     </div>
     <div
       className="relative"
@@ -664,7 +687,8 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            href="https://crawlear.com"
+            aria-label="Link to http://flatline.hopto.org/fx0/"
+            href="http://flatline.hopto.org/fx0/"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -673,7 +697,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/crawlearSite.png')",
+                  "backgroundImage": "url('/projectTunnel.webp')",
                 }
               }
             />
@@ -682,37 +706,19 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              href="https://crawlear.com"
+              aria-label="Link to http://flatline.hopto.org/fx0/"
+              href="http://flatline.hopto.org/fx0/"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
             >
-              Crawlear.com
+              2d Tunnel Fx
             </a>
           </div>
           <div
             className="p-5"
           >
-            <a
-              className=""
-              href="https://github.com/crawlear-com/crawlear-com.github.io"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              <img
-                alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
-              />
-            </a>
-            Owner and main developer of 
-            <a
-              href="https://crawlear.com"
-            >
-              crawlear.com
-            </a>
-            , an online service for professionals and fans of Rock and Scale Rc Crawlers trying to bring new technology and solutions for the hobby.
+            Classic 2d Tunnel Effect implemented in canvas2d and javascript
             <div
               className="m-6 flew-row flex-wrap flex"
             >
@@ -720,91 +726,14 @@ exports[`renders correctly 1`] = `
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                React SPA
+                Vanilla Javascript
                  
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                PWA caching
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Offline features
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Firebase
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Google Signin
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Multilanguge
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Social features
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                leaflet
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                jest tests core features
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Bluethooth web API
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                jest
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                integration tests
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                unit tests
+                Canvas 2D
                  
               </div>
             </div>
@@ -820,7 +749,8 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            href="http://flatline.hopto.org/3dEngine/"
+            aria-label="Link to http://flatline.hopto.org/pulgon/"
+            href="http://flatline.hopto.org/pulgon/"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -829,7 +759,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectObsolete.png')",
+                  "backgroundImage": "url('/projectPulgon.webp')",
                 }
               }
             />
@@ -838,38 +768,21 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              href="http://flatline.hopto.org/3dEngine/"
+              aria-label="Link to http://flatline.hopto.org/pulgon/"
+              href="http://flatline.hopto.org/pulgon/"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
             >
-              Obsolete Engine
+              Pulgon shoot'm up Engine Demo
             </a>
           </div>
           <div
             className="p-5"
           >
-            <a
-              className=""
-              href="https://github.com/neuroflip/ObsoleteEngine/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              <img
-                alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
-              />
-            </a>
-            3D wireframe basic engine. It can use objects from Blender or other 3D edition program using RAW format.
-          </div>
-          <div
-            className="p-5"
-          >
-            <b>
-              ** Check the top of the page. The rotating wireframe sphere is done in realtime with the 3dEngine
-            </b>
+            2D Shoote'm up 2D custom Canvas Engine. 2 Levels, several enemies, shoot upgrade, and others.
+            <br />
+             Touch and keyboard controls.
             <div
               className="m-6  flew-row flex-wrap flex"
             >
@@ -891,14 +804,14 @@ exports[`renders correctly 1`] = `
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                3d animation
+                Touch / mobile
                  
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                blender import scripts
+                keyboard / desktop
                  
               </div>
             </div>
@@ -914,7 +827,8 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            href="http://flatline.hopto.org"
+            aria-label="Link to http://flatline.hopto.org/asteroid/"
+            href="http://flatline.hopto.org/asteroid/"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -923,7 +837,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectPortfolio.png')",
+                  "backgroundImage": "url('/projectSpaceTrash.webp')",
                 }
               }
             />
@@ -932,153 +846,19 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              href="http://flatline.hopto.org"
+              aria-label="Link to http://flatline.hopto.org/asteroid/"
+              href="http://flatline.hopto.org/asteroid/"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
             >
-              JSLab And Experiments
+              Space Trash Demo
             </a>
           </div>
           <div
             className="p-5"
           >
-            <a
-              className=""
-              href="https://github.com/neuroflip/flatline-website"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              <img
-                alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
-              />
-            </a>
-            This site. Personal portfolio of some projects and experiments during the last years.
-            <div
-              className="m-6 flew-row flex-wrap flex"
-            >
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                React
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Nextjs
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                tailwind css
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                server components
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                client components
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                Intersection Observer
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                jest
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                integration tests
-                 
-              </div>
-              <div
-                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-              >
-                 
-                unit tests
-                 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="relative"
-    >
-      <div
-        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
-      >
-        <div>
-          <a
-            href="http://ahxmidiplayer.hopto.org/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            onTouchStart={[Function]}
-          >
-            <div
-              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
-              style={
-                {
-                  "backgroundImage": "url('/projectAHX.png')",
-                }
-              }
-            />
-          </a>
-          <div
-            className="text-3xl text-center mt-5 mr-5 mb-0"
-          >
-            <a
-              href="http://ahxmidiplayer.hopto.org/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              AHX Midi Player
-            </a>
-          </div>
-          <div
-            className="p-5"
-          >
-            <a
-              className=""
-              href="https://github.com/neuroflip/AhxMidiPlayer"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              onTouchStart={[Function]}
-            >
-              <img
-                alt="github logo"
-                className="float-left m-4"
-                src="/logoGithub.png"
-              />
-            </a>
-            AMP is a try to get some MIDI features using the AHX engine sounds at Commodore Amiga Range of computers. You can assign midi channels to ahx instruments, bang notes using NOTE ON midi messages or edit ahx instrument parameters like the ADSR curve using CC midi commands.
+            2D Vector game. Avoid space trash collisions with earth.
             <div
               className="m-6  flew-row flex-wrap flex"
             >
@@ -1086,19 +866,269 @@ exports[`renders correctly 1`] = `
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                HTML
+                Vanilla Javascript
                  
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
                  
-                Google Analitics
+                Canvas 2D
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                keyboard / desktop
                  
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div
+      className="relative"
+    >
+      <div
+        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
+      >
+        <div>
+          <a
+            aria-label="Link to http://flatline.hopto.org/tetris/"
+            href="http://flatline.hopto.org/tetris/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
+              style={
+                {
+                  "backgroundImage": "url('/projectTetris.webp')",
+                }
+              }
+            />
+          </a>
+          <div
+            className="text-3xl text-center mt-5 mr-5 mb-0"
+          >
+            <a
+              aria-label="Link to http://flatline.hopto.org/tetris/"
+              href="http://flatline.hopto.org/tetris/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              Tetris!
+            </a>
+          </div>
+          <div
+            className="p-5"
+          >
+            <a
+              aria-label="github logo"
+              className=""
+              href="https://github.com/neuroflip/simple-tetris"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              <img
+                alt="github logo"
+                className="float-left m-4 w-8 h-8"
+                src="/logoGithub.webp"
+              />
+            </a>
+            2D Canvas simple Tetris as a dev exercise.
+            <div
+              className="m-6 flew-row flex-wrap flex"
+            >
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Vanilla Javascript
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Canvas 2D
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                Touch / mobile
+                 
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                 
+                keyboard / desktop
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="interests"
+  >
+    <div
+      className="text-cyan-400 text-sm text-right pt-14 w-full"
+    >
+      INTERESTS
+    </div>
+    <div
+      className="mb-6 mt-0 flew-row flex-wrap flex"
+    >
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        front-end
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        html
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        scss
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        javascript
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        ES6
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        typescript
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        react
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        nextjs
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        pwa
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        workbox
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        spa
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        storybook
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        cordova apps
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        app store
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        google play
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        amp pages
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        instant articles
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        webpack
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        testing
+         
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+         
+        jest
+         
       </div>
     </div>
   </div>
