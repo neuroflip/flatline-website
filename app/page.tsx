@@ -7,6 +7,7 @@ import Title from "./ui/Title";
 import Introduction from "./ui/Introduction";
 import Projects from "./ui/Projects";
 import Experiments from "./ui/Experiments";
+import { Suspense } from 'react'
 
 
 export default function Home() {
@@ -21,7 +22,9 @@ export default function Home() {
         </div>
       </div>
 
-      <ObsoleteEngine></ObsoleteEngine>
+      <Suspense fallback={<p>Loading feed...</p>}>
+        <ObsoleteEngine></ObsoleteEngine>
+      </Suspense>
       <ContentHeader></ContentHeader>
       <InternalLinks></InternalLinks>
 

@@ -6,9 +6,9 @@ import ProjectObsoleteTags from './ProjectObsoleteTags'
 function ProjectObsolete () {
   return <Project linkUrl='http://flatline.hopto.org/3dEngine/' 
     title="Obsolete Engine"
-    image="/projectObsolete.png">
+    image="/projectObsolete.webp">
     <><div className='p-5'>
-        <IconLink imageClassName='float-left m-4' url="https://github.com/neuroflip/ObsoleteEngine/" iconImage="/logoGithub.png" iconAlt='github logo'></IconLink>
+        <IconLink imageClassName='float-left m-4 w-8 h-8' url="https://github.com/neuroflip/ObsoleteEngine/" iconImage="/logoGithub.webp" iconAlt='github logo'></IconLink>
         3D wireframe basic engine. It can use objects from Blender or other 3D edition program using RAW format.
       </div>
       <div className='p-5'>
