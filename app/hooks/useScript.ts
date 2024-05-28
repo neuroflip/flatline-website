@@ -9,6 +9,8 @@ const UseScript = (url: string, id: string, onLoadedCallback: (this: HTMLScriptE
       script.id = id;
       script.src = url
       script.async = true
+      script.dataset.testid = id
+
       if (onLoadedCallback) {
         script.addEventListener('load', onLoadedCallback)
       }
