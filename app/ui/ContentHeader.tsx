@@ -6,7 +6,7 @@ function ContentHeader() {
         <div className='w-full p-15 mt-20'>
             <canvas id="mainContainer--canvas" className='absolute top-20 -z-10'></canvas>
                 
-            <img className='w-15 rounded-full border-gray-800 border w-20 inline float-left mb-5 ml-5 mr-5' src='/yo.png' alt="it's me!"></img>
+            <img width="80px" height="76px" className='w-15 rounded-full border-gray-800 border w-20 inline float-left mb-5 ml-5 mr-5' src='/yo.webp' alt="it's me!"></img>
             <h1 className='text-xl m-15 mt-15 mr-15 mb-0 ml-15'>José Ángel Anguita Rovira</h1>
             <h2 className='text-xs'>Crafting webs since the 0x5A's</h2>
             <p className='text-right'>
@@ -15,9 +15,24 @@ function ContentHeader() {
             </p>
         </div>
         <p className='flex-row flex-wrap flex'>
-            <IconLink imageClassName='m-5' url="https://github.com/neuroflip/" iconImage='/logoGithub.png' iconAlt='Github Profile'></IconLink>
-            <IconLink imageClassName='m-5' url="https://www.linkedin.com/in/joseangelanguitarovira/" iconImage='/logoLinkedIn.png' iconAlt='Linkedin Profile'></IconLink>
-            <IconLink imageClassName='m-5' url='http://flatline.hopto.org/JoseAAnguitaCV.pdf' iconImage='/cvLogo.png' iconAlt="Download Curriculum Vitae"></IconLink>
+            <IconLink imageClassName='m-5 w-8 h-8' 
+                iconWidth={32}
+                iconHeight={32}
+                url="https://github.com/neuroflip/" 
+                iconImage='/logoGithub.webp' 
+                iconAlt='Github Profile'></IconLink>
+            <IconLink imageClassName='m-5 w-8 h-8' 
+                iconWidth={32}
+                iconHeight={32}            
+                url="https://www.linkedin.com/in/joseangelanguitarovira/" 
+                iconImage='/logoLinkedIn.webp' 
+                iconAlt='Linkedin Profile'></IconLink>
+            <IconLink imageClassName='m-5 w-8 h-8'
+                iconWidth={32}
+                iconHeight={32}
+                url='http://flatline.hopto.org/JoseAAnguitaCV.pdf'
+                iconImage='/cvLogo.webp'
+                iconAlt="Download Curriculum Vitae"></IconLink>
         </p>
     </>
 }

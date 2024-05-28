@@ -5,7 +5,7 @@ import SpaceTrashTags from './SpaceTrashTags'
 function SpaceTrash () {
   return <Project linkUrl='http://flatline.hopto.org/asteroid/' 
     title="Space Trash Demo"
-    image="/projectSpaceTrash.png">
+    image="/projectSpaceTrash.webp">
     <div className='p-5'>
       2D Vector game. Avoid space trash collisions with earth.
       <SpaceTrashTags></SpaceTrashTags>

@@ -4,5 +4,4 @@ export default class Point2D {
 		this.x = x;
 		this.y = y;
 	};
-	
 };

@@ -3,7 +3,7 @@ import Util from "./Util";
 
 export default class Camera {
 	constructor() {
-        this.xOff = 0;
+		this.xOff = 0;
 		this.yOff = 0;
 		this.zOff = 20;
 		this.scaleFactor = 50;

@@ -6,9 +6,9 @@ import PorfolioTags from './PortfolioTags'
 function Portfolio () {
   return <Project linkUrl='http://flatline.hopto.org' 
     title="JSLab And Experiments"
-    image="/projectPortfolio.png">
+    image="/projectPortfolio.webp">
     <div className='p-5'>
-      <IconLink imageClassName='float-left m-4' url="https://github.com/neuroflip/flatline-website" iconImage="/logoGithub.png" iconAlt='github logo'></IconLink>
+      <IconLink imageClassName='float-left m-4 w-8 h-8' url="https://github.com/neuroflip/flatline-website" iconImage="/logoGithub.webp" iconAlt='github logo'></IconLink>
       This site. Personal portfolio of some projects and experiments during the last years.
       <PorfolioTags></PorfolioTags>
     </div>

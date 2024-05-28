@@ -9,9 +9,7 @@ const victorMono = Victor_Mono({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
   width: 'device-width',
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false
+  initialScale: 1
 }
 
 export const metadata: Metadata = {

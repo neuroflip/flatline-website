@@ -2,11 +2,9 @@ import Camera from "./Camera.js";
 import Util from "./Util.js";
 import Point3D from "./Point3D.js";
 import Light from "./Light.js";
-import Torus from "./Torus.js";
-import Cube from "./Cube.js";
 import Sphere from "./Sphere.js";
 
-export default class Engine {
+export default class Engine  {
 	constructor(canvas) {
 		this.requestAnimationFrameID = null;
 		this.object = Sphere;
@@ -16,8 +14,6 @@ export default class Engine {
 		this.lastScreenY = 0;
 		this.canvas = canvas;
 		this.canvasCtx = this.canvas.getContext('2d');
-		//this.canvas.width = Util.CANVASW;
-		//this.canvas.height = Util.CANVASH;
 		this.canvasCtx.lineWidth = 0.1;
 		this.camera = null;
 		this.light = null;
@@ -28,11 +24,10 @@ export default class Engine {
 	init() {
 		initScene.call(this);
 		this.canvas.oncontextmenu = ignoreFunction;
-		//this.reScaleViewport();
 		this.renderScene();
 	}
 
-	reScaleViewport(d) {
+	reScaleViewport() {
 		const rootElement = document.getElementById("root");
 
 		window.document.getElementById(this.canvas.id).style.height = "100px";
@@ -70,13 +65,9 @@ function initScene() {
 	this.light = new Light(new Point3D(0,10,0), 
 						   new Point3D("F","0","0"));
 
-	//Util.xrotate(Util.g2r(Util.XROTATE_INITIAL), this.object);	
-    //Util.yrotate(Util.g2r(Util.YROTATE_INITIAL), this.object);
 	Util.translate(new Point3D(this.camera.xOff, this.camera.yOff, this.camera.zOff), this.object);
-
 	this.light.position = Util.xrotatePoint(this.light.position, Util.g2r(Util.XROTATE_INITIAL));
 	this.light.position = Util.zrotatePoint(this.light.position, Util.g2r(Util.YROTATE_INITIAL));
-
 	this.light.position = Util.translatePoint(this.light.position, 
 		new Point3D(0, this.camera.yOff+5, this.camera.zOff));
 }
