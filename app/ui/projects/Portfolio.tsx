@@ -4,7 +4,7 @@ import IconLink from '../IconLink'
 import PorfolioTags from './PortfolioTags'
 
 function Portfolio () {
-  return <Project linkUrl='http://flatline.hopto.org' 
+  return <Project linkUrl='https://neuroflip.github.io/flatline-website/' 
     title="JSLab And Experiments"
     image="/flatline-website//projectPortfolio.webp">
     <div className='p-5'>

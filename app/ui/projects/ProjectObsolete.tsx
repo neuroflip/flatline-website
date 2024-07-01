@@ -4,7 +4,7 @@ import IconLink from '../IconLink'
 import ProjectObsoleteTags from './ProjectObsoleteTags'
 
 function ProjectObsolete () {
-  return <Project linkUrl='http://flatline.hopto.org/3dEngine/' 
+  return <Project linkUrl='https://neuroflip.github.io/ObsoleteEngine/' 
     title="Obsolete Engine"
     image="/flatline-website/projectObsolete.webp">
     <><div className='p-5'>

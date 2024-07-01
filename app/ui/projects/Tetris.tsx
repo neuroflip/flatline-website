@@ -4,7 +4,7 @@ import IconLink from '../IconLink'
 import TetrisTags from './TetrisTags'
 
 function Tetris () {
-  return <Project linkUrl='http://flatline.hopto.org/tetris/' 
+  return <Project linkUrl='https://neuroflip.github.io/simple-tetris/' 
     title="Tetris!"
     image="/flatline-website/projectTetris.webp">
     <div className='p-5'>

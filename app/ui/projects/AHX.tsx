@@ -4,7 +4,7 @@ import IconLink from '../IconLink'
 import AHXTags from './AHXTags'
 
 function AHX () {
-  return <Project linkUrl="http://ahxmidiplayer.hopto.org/" 
+  return <Project linkUrl="https://neuroflip.github.io/AhxMidiPlayerSite/" 
     title="AHX Midi Player"
     image="/flatline-website/projectAHX.webp">
     <>
