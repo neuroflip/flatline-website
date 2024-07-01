@@ -8,7 +8,7 @@ interface ObsoleteEngineProps {
 }
 
 function ObsoleteEngine({ children }: ObsoleteEngineProps) {
-  UseScript('/ObsoleteEngine.js', 'obsolete', () => {
+  UseScript('/flatline-website/ObsoleteEngine.js', 'obsolete', () => {
     const t = new Engine(document.getElementById('mainContainer--canvas') as HTMLCanvasElement)
     t.init()
   })
