@@ -6,7 +6,7 @@ import SpaceTrash from './projects/SpaceTrash'
 import Tetris from './projects/Tetris'
 
 function Experiments() {
-  return <div id="projects">
+  return <div id="experiments">
     <Title><>EXPERIMENTS</></Title>
     <Tunnel></Tunnel>
     <Pulgon></Pulgon>
