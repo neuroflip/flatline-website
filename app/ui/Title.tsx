@@ -5,9 +5,9 @@ interface TitleProps {
 }
 
 function Title ({ children }: TitleProps) {
-  return <div className='text-cyan-400 text-sm text-right pt-14 w-full'>
+  return <h1 className='text-cyan-400 text-sm text-right pt-14 w-full'>
     { children }
-  </div>
+  </h1>
 }
 
 export default Title

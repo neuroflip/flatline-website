@@ -29,9 +29,9 @@ export default function Home() {
       <InternalLinks></InternalLinks>
 
       <Introduction></Introduction>
+      <Interests></Interests>
       <Projects></Projects>
       <Experiments></Experiments>
-      <Interests></Interests>
     </main>
   );
 }
