@@ -14,11 +14,11 @@ function Project ( { title, image, linkUrl, children } : ProjectProps ) {
   return <UIIntersector>
     <Card extraClassName='bg-slate-800 p-0'>
       <div>
-        <Link aria-label={`Link to ${linkUrl}`} href={linkUrl}>
+        <Link prefetch={false} aria-label={`Link to ${linkUrl}`} href={linkUrl}>
           <div className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl" style={{ backgroundImage: `url('${image}')` }}></div>
         </Link>
         <div className="text-3xl text-center mt-5 mr-5 mb-0">
-          <Link aria-label={`Link to ${linkUrl}`} href={linkUrl}>
+          <Link prefetch={false} aria-label={`Link to ${linkUrl}`} href={linkUrl}>
             { title } 
           </Link>
         </div>
