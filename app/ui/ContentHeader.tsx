@@ -30,7 +30,7 @@ function ContentHeader() {
             <IconLink imageClassName='m-5 w-8 h-8'
                 iconWidth={32}
                 iconHeight={32}
-                url='http://flatline.hopto.org/JoseAAnguitaCV.pdf'
+                url='/JoseAAnguitaCV.pdf'
                 iconImage='/flatline-website/cvLogo.webp'
                 iconAlt="Download Curriculum Vitae"></IconLink>
         </p>
