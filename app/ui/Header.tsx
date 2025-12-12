@@ -1,7 +1,6 @@
 import * as React from 'react'
-import IconLink from './IconLink'
 
-function Header (): React.JSX.Element {
+const Header = () => {
   return (<header className='fixed left-0 top-0 container mx-auto px-4 h-full'>
         <svg className='max-h-26 fixed left-0 top-0 pt-[6px] mx-auto px-4 h-full w-3/5 mr-0'>
             <g id="SvgjsG1612" transform="translate(0 0) scale(1.0 1)" fill="#ffffff">

@@ -40,15 +40,15 @@ exports[`renders correctly 1`] = `
     <div
       className="fixed bottom-0 left-0 flex h-12 w-full items-end justify-center bg-gradient-to-t from-black via-black"
     >
-      <div
+      <h1
         className="text-cyan-400 text-sm text-right pt-14 w-full"
       >
         <div
           className="text-xs text-center text-gray-700"
         >
-          neuroflip - 2024
+          neuroflip - 2025
         </div>
-      </div>
+      </h1>
     </div>
   </div>
   <div
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
       alt="it's me!"
       className="w-15 rounded-full border-gray-800 border w-20 inline float-left mb-5 ml-5 mr-5"
       height="76px"
-      src="/yo.webp"
+      src="/flatline-website/yo.webp"
       width="80px"
     />
     <h1
@@ -100,7 +100,7 @@ exports[`renders correctly 1`] = `
         alt="Github Profile"
         className="m-5 w-8 h-8"
         height={32}
-        src="/logoGithub.webp"
+        src="/flatline-website/logoGithub.webp"
         width={32}
       />
     </a>
@@ -116,14 +116,14 @@ exports[`renders correctly 1`] = `
         alt="Linkedin Profile"
         className="m-5 w-8 h-8"
         height={32}
-        src="/logoLinkedIn.webp"
+        src="/flatline-website/logoLinkedIn.webp"
         width={32}
       />
     </a>
     <a
       aria-label="Download Curriculum Vitae"
       className=""
-      href="http://flatline.hopto.org/JoseAAnguitaCV.pdf"
+      href="/JoseAAnguitaCV.pdf"
       onClick={[Function]}
       onMouseEnter={[Function]}
       onTouchStart={[Function]}
@@ -132,13 +132,13 @@ exports[`renders correctly 1`] = `
         alt="Download Curriculum Vitae"
         className="m-5 w-8 h-8"
         height={32}
-        src="/cvLogo.webp"
+        src="/flatline-website/cvLogo.webp"
         width={32}
       />
     </a>
   </p>
   <div
-    className="text-center text-cyan-400 text-sm mt-8 w-full mx-auto"
+    className="text-center text-cyan-400 text-lg mt-8 w-full mx-auto"
   >
     <a
       href="#introduction"
@@ -150,6 +150,15 @@ exports[`renders correctly 1`] = `
     </a>
      - 
     <a
+      href="#interests"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      onTouchStart={[Function]}
+    >
+      INTERESTS
+    </a>
+    - 
+    <a
       href="#projects"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -157,7 +166,7 @@ exports[`renders correctly 1`] = `
     >
       PROJECTS
     </a>
-    - 
+     - 
     <a
       href="#experiments"
       onClick={[Function]}
@@ -166,53 +175,159 @@ exports[`renders correctly 1`] = `
     >
       EXPERIMENTS
     </a>
-     - 
-    <a
-      href="#interests"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      onTouchStart={[Function]}
-    >
-      INTERESTS
-    </a>
   </div>
   <div
     id="introduction"
   >
-    <div
+    <h1
       className="text-cyan-400 text-sm text-right pt-14 w-full"
     >
       INTRODUCTION
-    </div>
+    </h1>
     <div
       className="justify-normal bg-slate-500 rounded-xl mb-6 p-6 mt-0"
     >
       <p>
-        Social and friendly person interested in web sites since the late 90’s. Passionate about innovation in all that I do.
+        Front-End Developer with over 10 years of experience building web applications and scalable digital products. My industry experience has allowed me to contribute to a wide range of projects, creating innovative products in multidisciplinary team environments. Highly motivated by clean architectures, SOLID principles, and performance optimization in web platforms.
       </p>
     </div>
-    <div
-      className="justify-normal bg-slate-500 rounded-xl mb-6 p-6 mt-0"
+  </div>
+  <div
+    id="interests"
+  >
+    <h1
+      className="text-cyan-400 text-sm text-right pt-14 w-full"
     >
-      <p
-        className="mt-5"
+      INTERESTS
+    </h1>
+    <div
+      className="mb-6 mt-0 flew-row flex-wrap flex"
+    >
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
       >
-        Working with modern web applications since 2002, helping several bcn tech startups (MedHouses, Cybex, Layers, 
-        <b>
-          Marfeel
-        </b>
-        ) building awsome products and working with international and multidisciplinary teams.
-      </p>
+        front-end
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        html
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        javascript
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        ES6
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        typescript
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        SOLID principles
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        clean code
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        patterns
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        scss
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        taiwind css
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        react
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        nextjs
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        pwa
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        workbox
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        spa
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        storybook
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        cordova apps
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        app store
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        google play
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        amp pages
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        instant articles
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        webpack
+      </div>
+      <div
+        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+      >
+        testing
+      </div>
     </div>
   </div>
   <div
     id="projects"
   >
-    <div
+    <h1
       className="text-cyan-400 text-sm text-right pt-14 w-full"
     >
       PROJECTS
-    </div>
+    </h1>
     <div
       className="relative"
     >
@@ -231,7 +346,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/crawlearSite.webp')",
+                  "backgroundImage": "url('/flatline-website/crawlearSite.webp')",
                 }
               }
             />
@@ -263,7 +378,7 @@ exports[`renders correctly 1`] = `
               <img
                 alt="github logo"
                 className="w-8 h-8 float-left m-4"
-                src="/logoGithub.webp"
+                src="/flatline-website/logoGithub.webp"
               />
             </a>
             Owner and main developer of 
@@ -279,93 +394,67 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 React SPA
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 PWA caching
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Offline features
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Firebase
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Google Signin
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Multilanguge
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Social features
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 leaflet
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 jest tests core features
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Bluethooth web API
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 jest
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 integration tests
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 unit tests
-                 
               </div>
             </div>
           </div>
@@ -380,8 +469,8 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            aria-label="Link to http://flatline.hopto.org/3dEngine/"
-            href="http://flatline.hopto.org/3dEngine/"
+            aria-label="Link to https://neuroflip.github.io/ITAcademy-Sprint5-ImageGallery/"
+            href="https://neuroflip.github.io/ITAcademy-Sprint5-ImageGallery/"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -390,7 +479,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectObsolete.webp')",
+                  "backgroundImage": "url('/flatline-website/ImageGallery.webp')",
                 }
               }
             />
@@ -399,8 +488,96 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              aria-label="Link to http://flatline.hopto.org/3dEngine/"
-              href="http://flatline.hopto.org/3dEngine/"
+              aria-label="Link to https://neuroflip.github.io/ITAcademy-Sprint5-ImageGallery/"
+              href="https://neuroflip.github.io/ITAcademy-Sprint5-ImageGallery/"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              Image Gallery
+            </a>
+          </div>
+          <div
+            className="p-5"
+          >
+            A React Lorem Picsum Image Gallery example with features such as reordering using the Drag and Drop API, image selection, or deletion. Context menu to access some of the functionalities.
+            <div
+              className="m-6  flew-row flex-wrap flex"
+            >
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                React
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                Typescript
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                vite
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                Drag and Drop API
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                dependency injection
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                Context API
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                shadcn/ui
+              </div>
+              <div
+                className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
+              >
+                vitest
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="relative"
+    >
+      <div
+        className="justify-normal bg-slate-500 rounded-xl mb-6 bg-slate-800 p-0"
+      >
+        <div>
+          <a
+            aria-label="Link to https://neuroflip.github.io/ObsoleteEngine/"
+            href="https://neuroflip.github.io/ObsoleteEngine/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
+              style={
+                {
+                  "backgroundImage": "url('/flatline-website/projectObsolete.webp')",
+                }
+              }
+            />
+          </a>
+          <div
+            className="text-3xl text-center mt-5 mr-5 mb-0"
+          >
+            <a
+              aria-label="Link to https://neuroflip.github.io/ObsoleteEngine/"
+              href="https://neuroflip.github.io/ObsoleteEngine/"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
@@ -422,7 +599,7 @@ exports[`renders correctly 1`] = `
               <img
                 alt="github logo"
                 className="float-left m-4 w-8 h-8"
-                src="/logoGithub.webp"
+                src="/flatline-website/logoGithub.webp"
               />
             </a>
             3D wireframe basic engine. It can use objects from Blender or other 3D edition program using RAW format.
@@ -439,30 +616,22 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Vanilla Javascript
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Canvas 2D
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 3d animation
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 blender import scripts
-                 
               </div>
             </div>
           </div>
@@ -477,8 +646,8 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            aria-label="Link to http://flatline.hopto.org"
-            href="http://flatline.hopto.org"
+            aria-label="Link to https://neuroflip.github.io/flatline-website/"
+            href="https://neuroflip.github.io/flatline-website/"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -487,7 +656,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectPortfolio.webp')",
+                  "backgroundImage": "url('/flatline-website//projectPortfolio.webp')",
                 }
               }
             />
@@ -496,8 +665,8 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              aria-label="Link to http://flatline.hopto.org"
-              href="http://flatline.hopto.org"
+              aria-label="Link to https://neuroflip.github.io/flatline-website/"
+              href="https://neuroflip.github.io/flatline-website/"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
@@ -519,7 +688,7 @@ exports[`renders correctly 1`] = `
               <img
                 alt="github logo"
                 className="float-left m-4 w-8 h-8"
-                src="/logoGithub.webp"
+                src="/flatline-website/logoGithub.webp"
               />
             </a>
             This site. Personal portfolio of some projects and experiments during the last years.
@@ -529,65 +698,47 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 React
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Nextjs
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 tailwind css
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 server components
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 client components
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Intersection Observer
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 jest
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 integration tests
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 unit tests
-                 
               </div>
             </div>
           </div>
@@ -602,8 +753,8 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            aria-label="Link to http://ahxmidiplayer.hopto.org/"
-            href="http://ahxmidiplayer.hopto.org/"
+            aria-label="Link to https://neuroflip.github.io/AhxMidiPlayerSite/"
+            href="https://neuroflip.github.io/AhxMidiPlayerSite/"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -612,7 +763,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectAHX.webp')",
+                  "backgroundImage": "url('/flatline-website/projectAHX.webp')",
                 }
               }
             />
@@ -621,8 +772,8 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              aria-label="Link to http://ahxmidiplayer.hopto.org/"
-              href="http://ahxmidiplayer.hopto.org/"
+              aria-label="Link to https://neuroflip.github.io/AhxMidiPlayerSite/"
+              href="https://neuroflip.github.io/AhxMidiPlayerSite/"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
@@ -644,7 +795,7 @@ exports[`renders correctly 1`] = `
               <img
                 alt="github logo"
                 className="float-left m-4 w-8 h-8"
-                src="/logoGithub.webp"
+                src="/flatline-website/logoGithub.webp"
               />
             </a>
             AMP is a try to get some MIDI features using the AHX engine sounds at Commodore Amiga Range of computers. You can assign midi channels to ahx instruments, bang notes using NOTE ON midi messages or edit ahx instrument parameters like the ADSR curve using CC midi commands.
@@ -654,16 +805,12 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 HTML
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Google Analitics
-                 
               </div>
             </div>
           </div>
@@ -672,13 +819,13 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    id="projects"
+    id="experiments"
   >
-    <div
+    <h1
       className="text-cyan-400 text-sm text-right pt-14 w-full"
     >
       EXPERIMENTS
-    </div>
+    </h1>
     <div
       className="relative"
     >
@@ -697,7 +844,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectTunnel.webp')",
+                  "backgroundImage": "url('/flatline-website/projectTunnel.webp')",
                 }
               }
             />
@@ -725,16 +872,12 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Vanilla Javascript
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Canvas 2D
-                 
               </div>
             </div>
           </div>
@@ -759,7 +902,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectPulgon.webp')",
+                  "backgroundImage": "url('/flatline-website/projectPulgon.webp')",
                 }
               }
             />
@@ -789,30 +932,22 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Vanilla Javascript
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Canvas 2D
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Touch / mobile
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 keyboard / desktop
-                 
               </div>
             </div>
           </div>
@@ -837,7 +972,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectSpaceTrash.webp')",
+                  "backgroundImage": "url('/flatline-website/projectSpaceTrash.webp')",
                 }
               }
             />
@@ -865,23 +1000,17 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Vanilla Javascript
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Canvas 2D
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 keyboard / desktop
-                 
               </div>
             </div>
           </div>
@@ -896,8 +1025,8 @@ exports[`renders correctly 1`] = `
       >
         <div>
           <a
-            aria-label="Link to http://flatline.hopto.org/tetris/"
-            href="http://flatline.hopto.org/tetris/"
+            aria-label="Link to https://neuroflip.github.io/simple-tetris/"
+            href="https://neuroflip.github.io/simple-tetris/"
             onClick={[Function]}
             onMouseEnter={[Function]}
             onTouchStart={[Function]}
@@ -906,7 +1035,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/projectTetris.webp')",
+                  "backgroundImage": "url('/flatline-website/projectTetris.webp')",
                 }
               }
             />
@@ -915,8 +1044,8 @@ exports[`renders correctly 1`] = `
             className="text-3xl text-center mt-5 mr-5 mb-0"
           >
             <a
-              aria-label="Link to http://flatline.hopto.org/tetris/"
-              href="http://flatline.hopto.org/tetris/"
+              aria-label="Link to https://neuroflip.github.io/simple-tetris/"
+              href="https://neuroflip.github.io/simple-tetris/"
               onClick={[Function]}
               onMouseEnter={[Function]}
               onTouchStart={[Function]}
@@ -938,7 +1067,7 @@ exports[`renders correctly 1`] = `
               <img
                 alt="github logo"
                 className="float-left m-4 w-8 h-8"
-                src="/logoGithub.webp"
+                src="/flatline-website/logoGithub.webp"
               />
             </a>
             2D Canvas simple Tetris as a dev exercise.
@@ -948,187 +1077,26 @@ exports[`renders correctly 1`] = `
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Vanilla Javascript
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Canvas 2D
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 Touch / mobile
-                 
               </div>
               <div
                 className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
               >
-                 
                 keyboard / desktop
-                 
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div
-    id="interests"
-  >
-    <div
-      className="text-cyan-400 text-sm text-right pt-14 w-full"
-    >
-      INTERESTS
-    </div>
-    <div
-      className="mb-6 mt-0 flew-row flex-wrap flex"
-    >
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        front-end
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        html
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        scss
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        javascript
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        ES6
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        typescript
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        react
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        nextjs
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        pwa
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        workbox
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        spa
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        storybook
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        cordova apps
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        app store
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        google play
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        amp pages
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        instant articles
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        webpack
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        testing
-         
-      </div>
-      <div
-        className="bg-slate-900 flex-auto rounded-xl text-sm p-3 m-1 inline-block text-center"
-      >
-         
-        jest
-         
       </div>
     </div>
   </div>

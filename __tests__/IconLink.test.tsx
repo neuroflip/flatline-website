@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import IconLink from '@/app/ui/IconLink'
+import IconLink from '@/app/ui/IconLink/IconLink'
 
 describe('IconLink', () => {  
   it('renders correctly', () => {

@@ -1,14 +1,15 @@
-import * as React from 'react'
-import Title from './Title'
-import Crawlear from './projects/Crawlear'
-import ProjectObsolete from './projects/ProjectObsolete'
-import Portfolio from './projects/Portfolio'
-import AHX from './projects/AHX'
+import Title from './Title/Title'
+import Crawlear from './projects/Crawlear/Crawlear'
+import ProjectObsolete from './projects/ProjectObsolete/ProjectObsolete'
+import Portfolio from './projects/Portfolio/Portfolio'
+import AHX from './projects/AHX/AHX'
+import ImageGallery from './projects/ImageGallery/ImageGallery'
 
-function Projects() {
+const Projects = () => {
   return <div id="projects">
     <Title><>PROJECTS</></Title>
     <Crawlear></Crawlear>
+    <ImageGallery></ImageGallery>
     <ProjectObsolete></ProjectObsolete>
     <Portfolio></Portfolio>
     <AHX></AHX>
