@@ -90,7 +90,6 @@ exports[`renders correctly 1`] = `
   >
     <a
       aria-label="Github Profile"
-      className=""
       href="https://github.com/neuroflip/"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -106,7 +105,6 @@ exports[`renders correctly 1`] = `
     </a>
     <a
       aria-label="Linkedin Profile"
-      className=""
       href="https://www.linkedin.com/in/joseangelanguitarovira/"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -122,7 +120,6 @@ exports[`renders correctly 1`] = `
     </a>
     <a
       aria-label="Download Curriculum Vitae"
-      className=""
       href="/JoseAAnguitaCV.pdf"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -369,7 +366,6 @@ exports[`renders correctly 1`] = `
           >
             <a
               aria-label="github logo"
-              className=""
               href="https://github.com/crawlear-com/crawlear-com.github.io"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -500,6 +496,19 @@ exports[`renders correctly 1`] = `
           <div
             className="p-5"
           >
+            <a
+              aria-label="github logo"
+              href="https://github.com/neuroflip/ITAcademy-Sprint5-ImageGallery"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onTouchStart={[Function]}
+            >
+              <img
+                alt="github logo"
+                className="w-8 h-8 float-left m-4"
+                src="/flatline-website/logoGithub.webp"
+              />
+            </a>
             A React Lorem Picsum Image Gallery example with features such as reordering using the Drag and Drop API, image selection, or deletion. Context menu to access some of the functionalities.
             <div
               className="m-6  flew-row flex-wrap flex"
@@ -590,7 +599,6 @@ exports[`renders correctly 1`] = `
           >
             <a
               aria-label="github logo"
-              className=""
               href="https://github.com/neuroflip/ObsoleteEngine/"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -656,7 +664,7 @@ exports[`renders correctly 1`] = `
               className="w-full h-24 bg-no-repeat bg-cover rounded-t-xl"
               style={
                 {
-                  "backgroundImage": "url('/flatline-website//projectPortfolio.webp')",
+                  "backgroundImage": "url('/flatline-website/projectPortfolio.webp')",
                 }
               }
             />
@@ -679,7 +687,6 @@ exports[`renders correctly 1`] = `
           >
             <a
               aria-label="github logo"
-              className=""
               href="https://github.com/neuroflip/flatline-website"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -786,7 +793,6 @@ exports[`renders correctly 1`] = `
           >
             <a
               aria-label="github logo"
-              className=""
               href="https://github.com/neuroflip/AhxMidiPlayer"
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -1058,7 +1064,6 @@ exports[`renders correctly 1`] = `
           >
             <a
               aria-label="github logo"
-              className=""
               href="https://github.com/neuroflip/simple-tetris"
               onClick={[Function]}
               onMouseEnter={[Function]}

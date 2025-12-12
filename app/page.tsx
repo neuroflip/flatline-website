@@ -1,14 +1,13 @@
 import Header from "./ui/Header";
 import ContentHeader from "./ui/ContentHeader";
 import InternalLinks from "./ui/InternalLinks";
-import ObsoleteEngine from "./ui/ObsoleteEngine/ObsoleteEngine";
-import Interests from "./ui/Interests";
+import ObsoleteEngine from "./sections/ObsoleteEngine/ObsoleteEngine";
+import Interests from "./sections/Interests";
 import Title from "./ui/Title/Title";
-import Introduction from "./ui/Introduction";
-import Projects from "./ui/Projects";
-import Experiments from "./ui/Experiments";
+import Introduction from "./sections/Introduction";
+import Projects from "./sections/Projects";
+import Experiments from "./sections/Experiments";
 import { Suspense } from 'react'
-
 
 const Home = () => {
   return (<main className="mt-0 ,b-0 mr-auto ml-auto flex max-w-lg w-11/12 min-h-screen flex-col items-center justify-between">

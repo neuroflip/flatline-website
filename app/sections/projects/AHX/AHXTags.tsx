@@ -1,0 +1,11 @@
+import * as React from 'react';
+import Tag from '@/app/ui/Tag/Tag';
+
+const AHXTags = () => {
+    return <div className='m-6  flew-row flex-wrap flex'>
+      <Tag text='HTML'></Tag>
+      <Tag text='Google Analitics'></Tag>
+  </div>
+}
+
+export default AHXTags
