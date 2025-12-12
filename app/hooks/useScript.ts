@@ -17,10 +17,6 @@ const UseScript = (url: string, id: string, onLoadedCallback: (this: HTMLScriptE
 
       document.body.appendChild(script);
     }
-
-    return () => {
-      script.parentElement && document.body.removeChild(script);
-    }
   }, [url]);
 };
 

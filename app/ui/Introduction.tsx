@@ -1,16 +1,13 @@
 import * as React from 'react'
-import Title from './Title'
-import Card from './Card'
+import Title from './Title/Title'
+import Card from './Card/Card'
 
-function Introduction() {
+const Introduction = () => {
   return <div id="introduction">
     <Title><>INTRODUCTION</></Title>
     <Card extraClassName="p-6 mt-0">
-        <p>Social and friendly person interested in web sites since the late 90’s. Passionate about innovation in all that I do.</p>
+        <p>Front-End Developer with over 10 years of experience building web applications and scalable digital products. My industry experience has allowed me to contribute to a wide range of projects, creating innovative products in multidisciplinary team environments. Highly motivated by clean architectures, SOLID principles, and performance optimization in web platforms.</p>
       </Card>
-      <Card extraClassName="p-6 mt-0">
-          <p className="mt-5">Working with modern web applications since 2002, helping several bcn tech startups (MedHouses, Cybex, Layers, <b>Marfeel</b>) building awsome products and working with international and multidisciplinary teams.</p>
-    </Card>
   </div>
 }
 

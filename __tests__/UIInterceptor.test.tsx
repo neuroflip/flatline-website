@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import UIIntersector from '@/app/ui/UIIntersector'
+import UIIntersector from '@/app/ui/UIIntersector/UIIntersector'
 
 describe('UIInterceptor', () => {
   const observe = jest.fn()

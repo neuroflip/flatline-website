@@ -1,7 +1,7 @@
 import * as React from 'react'
-import IconLink from './IconLink'
+import IconLink from './IconLink/IconLink'
 
-function ContentHeader() {
+const ContentHeader = () => {
     return  <>
         <div className='w-full p-15 mt-20'>
             <canvas id="mainContainer--canvas" className='absolute top-20 -z-10'></canvas>

@@ -1,8 +1,8 @@
 import * as React from 'react'
-import Title from './Title'
+import Title from './Title/Title'
 import TagCard from './TagCard'
 
-function Interests() {
+const Interests = () => {
   return <div id="interests">
     <Title><>INTERESTS</></Title>
     <TagCard></TagCard>
