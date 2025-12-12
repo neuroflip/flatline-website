@@ -6,7 +6,6 @@ const IconLink = ({ url, iconImage, iconAlt, imageClassName, iconWidth, iconHeig
     const prefetch = url.indexOf('.pdf') < 0
 
     return  <Link href={ url } 
-        className="" 
         aria-label={iconAlt}
         prefetch={prefetch}>
         <img src={iconImage} 
